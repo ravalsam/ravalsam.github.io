@@ -1,0 +1,956 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<title>Coverage Report</title> 
+<link title="Style" type="text/css" rel="stylesheet" href="../css/main.css"/> 
+<link title="Style" type="text/css" rel="stylesheet" href="../css/highlight.css"/> 
+
+<link title="Style" type="text/css" rel="stylesheet" href="../css/sortabletable.css"/> 
+<script type="text/javascript" src="../js/popup.js"></script> 
+<script type="text/javascript" src="../js/sortabletable.js"></script> 
+<script type="text/javascript" src="../js/customsorttypes.js"></script> 
+</head> 
+<body>
+<h5>Coverage Report - /home/samirrav/gcov_daos/src/iosrv/drpc_client.c <a href="../_home_samirrav_gcov_daos_src_iosrv.html"><img src='../images/upper.png' border="0"/></a></h5> 
+<br>
+<div class="separator">&nbsp;</div> 
+<table class="report" id="fileList"> 
+	<thead>
+		<tr>
+			<td class="heading" width="50%">File</td>  
+			<td class="heading" width="10%">#Function</td>  
+			<td class="heading"  width="20%">
+				<a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">
+					Function Coverage
+				</a>
+			</td>
+			<td class="heading"  width="20%">
+				<a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">
+					Branch Coverage
+				</a>
+			</td>
+		</tr>
+	</thead> 
+	
+	
+	<tbody> 
+	<tr>
+			<td><a href='../_home_samirrav_gcov_daos_src_iosrv/drpc_client_c.html'>/home/samirrav/gcov_daos/src/iosrv/drpc_client.c</a></td>
+			<td class='value'>3</td>
+			<td><table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+					<tr class='percentgraph'>
+						<td align='right' class='percentgraph' width='40'>66.7%</td>
+						<td class='percentgraph'>
+							<div class='percentgraph'>
+								<div class='greenbar' style='width:67px'>
+									<span class='text'>2/3</span>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+					<tr class='percentgraph'>
+						<td align='right' class='percentgraph' width='40'>50.0%</td>
+						<td class='percentgraph'>
+							<div class='percentgraph'>
+								<div class='greenbar' style='width:50px'>
+									<span class='text'>8/16</span>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</tbody> 
+</table> 
+
+<div class="separator">&nbsp;</div> 
+<table class="report" id="currentDir"> 
+	<thead>
+		<tr>
+			<td class="heading" width="50%">Functions</td>  
+			<td class="heading" width="25%">Function Covered</td>  
+			<td class="heading"  width="25%">
+				<a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">
+					Branch Coverage
+				</a>
+			</td>
+		</tr>
+	</thead> 
+	<tbody> 
+			<tr>
+					<td><a href='#41'>notify_ready(void)</a></td>
+					<td>
+							Covered
+					</td>
+					<td>
+						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+							<tr class='percentgraph'>
+								<td align='right' class='percentgraph' width='40'>50.0%</td>
+								<td class='percentgraph'>
+									<div class='percentgraph'>
+										<div class='greenbar' style='width:50.0px'>
+											<span class='text'>5/10</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+		<tr>
+					<td><a href='#93'>drpc_init(void)</a></td>
+					<td>
+							Covered
+					</td>
+					<td>
+						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+							<tr class='percentgraph'>
+								<td align='right' class='percentgraph' width='40'>50.0%</td>
+								<td class='percentgraph'>
+									<div class='percentgraph'>
+										<div class='greenbar' style='width:50.0px'>
+											<span class='text'>3/6</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+		<tr>
+					<td><a href='#124'>drpc_fini(void)</a></td>
+					<td>
+							Not Covered
+					</td>
+					<td>
+						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+							<tr class='percentgraph'>
+								<td align='right' class='percentgraph' width='40'>N/A%</td>
+								<td class='percentgraph'>
+									<div class='percentgraph'>
+										<div class='na' style='width:100px'>
+											<span class='text'>0/0</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			
+	</tbody> 
+</table> 
+
+
+
+<div class="separator">&nbsp;</div> 
+<div style="overflow-x:scroll;">
+<table class="source">
+<colgroup>
+<col width="40"/>
+<col width="40"/>
+<col width=""/>
+</colgroup>
+<tr class="kwnone">
+<td class="line">1</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_comment">/*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">2</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;(C)&nbsp;Copyright&nbsp;2019&nbsp;Intel&nbsp;Corporation.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">3</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">4</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;Licensed&nbsp;under&nbsp;the&nbsp;Apache&nbsp;License,&nbsp;Version&nbsp;2.0&nbsp;(the&nbsp;&quot;License&quot;);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">5</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;you&nbsp;may&nbsp;not&nbsp;use&nbsp;this&nbsp;file&nbsp;except&nbsp;in&nbsp;compliance&nbsp;with&nbsp;the&nbsp;License.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">6</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;You&nbsp;may&nbsp;obtain&nbsp;a&nbsp;copy&nbsp;of&nbsp;the&nbsp;License&nbsp;at</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">7</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">8</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;http://www.apache.org/licenses/LICENSE-2.0</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">9</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">10</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;Unless&nbsp;required&nbsp;by&nbsp;applicable&nbsp;law&nbsp;or&nbsp;agreed&nbsp;to&nbsp;in&nbsp;writing,&nbsp;software</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">11</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;distributed&nbsp;under&nbsp;the&nbsp;License&nbsp;is&nbsp;distributed&nbsp;on&nbsp;an&nbsp;&quot;AS&nbsp;IS&quot;&nbsp;BASIS,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">12</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;WITHOUT&nbsp;WARRANTIES&nbsp;OR&nbsp;CONDITIONS&nbsp;OF&nbsp;ANY&nbsp;KIND,&nbsp;either&nbsp;express&nbsp;or&nbsp;implied.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">13</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;See&nbsp;the&nbsp;License&nbsp;for&nbsp;the&nbsp;specific&nbsp;language&nbsp;governing&nbsp;permissions&nbsp;and</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">14</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;limitations&nbsp;under&nbsp;the&nbsp;License.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">15</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">16</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;GOVERNMENT&nbsp;LICENSE&nbsp;RIGHTS-OPEN&nbsp;SOURCE&nbsp;SOFTWARE</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">17</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;The&nbsp;Government's&nbsp;rights&nbsp;to&nbsp;use,&nbsp;modify,&nbsp;reproduce,&nbsp;release,&nbsp;perform,&nbsp;display,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">18</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;or&nbsp;disclose&nbsp;this&nbsp;software&nbsp;are&nbsp;subject&nbsp;to&nbsp;the&nbsp;terms&nbsp;of&nbsp;the&nbsp;Apache&nbsp;License&nbsp;as</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">19</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;provided&nbsp;in&nbsp;Contract&nbsp;No.&nbsp;B609815.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">20</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;Any&nbsp;reproduction&nbsp;of&nbsp;computer&nbsp;software,&nbsp;computer&nbsp;software&nbsp;documentation,&nbsp;or</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">21</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;portions&nbsp;thereof&nbsp;marked&nbsp;with&nbsp;this&nbsp;legend&nbsp;must&nbsp;also&nbsp;reproduce&nbsp;the&nbsp;markings.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">22</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_comment">&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">23</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">/**</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">24</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;This&nbsp;file&nbsp;is&nbsp;part&nbsp;of&nbsp;the&nbsp;DAOS&nbsp;server.&nbsp;It&nbsp;implements&nbsp;the&nbsp;dRPC&nbsp;client&nbsp;for</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">25</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;communicating&nbsp;with&nbsp;daos_server.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">26</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">27</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">28</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;D_LOGFAC&nbsp;DD_FAC</span><span class="cpp_separator">(</span><span class="cpp_plain">server</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">29</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">30</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">daos</span><span class="cpp_operator">/</span><span class="cpp_plain">drpc</span><span class="cpp_separator">.</span><span class="cpp_plain">h</span><span class="cpp_operator">&gt;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">31</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">daos</span><span class="cpp_operator">/</span><span class="cpp_plain">drpc_modules</span><span class="cpp_separator">.</span><span class="cpp_plain">h</span><span class="cpp_operator">&gt;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">32</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">daos_srv</span><span class="cpp_operator">/</span><span class="cpp_plain">daos_server</span><span class="cpp_separator">.</span><span class="cpp_plain">h</span><span class="cpp_operator">&gt;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">33</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;srv.pb-c.h&quot;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">34</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;srv_internal.h&quot;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">35</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">36</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">/**&nbsp;dRPC&nbsp;client&nbsp;context&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">37</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;drpc&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">dss_drpc_ctx</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">38</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">39</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_comment">/*&nbsp;Notify&nbsp;daos_server&nbsp;that&nbsp;we&nbsp;are&nbsp;ready&nbsp;(e.g.,&nbsp;to&nbsp;receive&nbsp;dRPC&nbsp;requests).&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">40</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
+</td>
+</tr>
+<tr class="covered">
+<td class="line">41<a name='41'/></td>
+<td class="line"><img src='../images/check_icon.png'></td>
+<td class="code"><span class="cpp_plain">notify_ready</span><span class="cpp_separator">(</span><span class="cpp_keyword">void</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">42</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">43</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">Srv__NotifyReadyReq</span><span class="cpp_plain">&nbsp;req&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;SRV__NOTIFY_READY_REQ__INIT</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">44</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;uint8_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">reqb</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">45</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;size_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reqb_size</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">46</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">Drpc__Call</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">dreq</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">47</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">Drpc__Response</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">dresp</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">48</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">49</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">50</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;crt_self_uri_get</span><span class="cpp_separator">(</span><span class="cpp_literal">0</span><span class="cpp_plain">&nbsp;</span><span class="cpp_comment">/*&nbsp;tag&nbsp;*/</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">req</span><span class="cpp_separator">.</span><span class="cpp_plain">uri</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">51</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">52</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;out</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">53</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;req</span><span class="cpp_separator">.</span><span class="cpp_plain">nctxs&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;DSS_CTX_NR_TOTAL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">54</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">55</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;reqb_size&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;srv__notify_ready_req__get_packed_size</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">req</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">56</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;D_ALLOC</span><span class="cpp_separator">(</span><span class="cpp_plain">reqb</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;reqb_size</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">57</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">reqb&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">58</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_NOMEM</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">59</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;out_uri</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">60</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">61</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;srv__notify_ready_req__pack</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">req</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;reqb</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">62</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">63</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;dreq&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;drpc_call_create</span><span class="cpp_separator">(</span><span class="cpp_plain">dss_drpc_ctx</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DRPC_MODULE_SRV</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">64</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DRPC_METHOD_SRV_NOTIFY_READY</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">65</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">dreq&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">66</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_NOMEM</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">67</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_FREE</span><span class="cpp_separator">(</span><span class="cpp_plain">reqb</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">68</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;out_uri</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">69</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">70</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;dreq</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">body</span><span class="cpp_separator">.</span><span class="cpp_plain">len&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;reqb_size</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">71</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;dreq</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">body</span><span class="cpp_separator">.</span><span class="cpp_plain">data&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;reqb</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">72</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">73</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;drpc_call</span><span class="cpp_separator">(</span><span class="cpp_plain">dss_drpc_ctx</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;R_SYNC</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;dreq</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">dresp</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">74</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">75</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;out_dreq</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">76</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">dresp</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">status&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;DRPC__STATUS__SUCCESS</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">77</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_ERROR</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;received&nbsp;erroneous&nbsp;dRPC&nbsp;response:&nbsp;%d\n&quot;</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">78</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dresp</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">status</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">79</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_IO</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">80</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">81</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">82</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;drpc_response_free</span><span class="cpp_separator">(</span><span class="cpp_plain">dresp</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">83</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">out_dreq</span><span class="cpp_operator">:</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">84</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;This&nbsp;also&nbsp;frees&nbsp;reqb&nbsp;via&nbsp;dreq-&gt;body.data.&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">85</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;drpc_call_free</span><span class="cpp_separator">(</span><span class="cpp_plain">dreq</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">86</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">out_uri</span><span class="cpp_operator">:</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">87</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;D_FREE</span><span class="cpp_separator">(</span><span class="cpp_plain">req</span><span class="cpp_separator">.</span><span class="cpp_plain">uri</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">88</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">out</span><span class="cpp_operator">:</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">89</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">90</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">91</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">92</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_type">int</span>
+</td>
+</tr>
+<tr class="covered">
+<td class="line">93<a name='93'/></td>
+<td class="line"><img src='../images/check_icon.png'></td>
+<td class="code"><span class="cpp_plain">drpc_init</span><span class="cpp_separator">(</span><span class="cpp_keyword">void</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">94</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">95</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">char</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">path</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">96</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">97</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">98</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;asprintf</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">path</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;%s/%s&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;dss_socket_dir</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;daos_server.sock&quot;</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">99</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">100</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_NOMEM</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">101</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;out</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">102</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">103</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">104</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;D_ASSERT</span><span class="cpp_separator">(</span><span class="cpp_plain">dss_drpc_ctx&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">105</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;dss_drpc_ctx&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;drpc_connect</span><span class="cpp_separator">(</span><span class="cpp_plain">path</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">106</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">dss_drpc_ctx&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">107</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_NOMEM</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">108</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;out_path</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">109</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">110</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">111</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;notify_ready</span><span class="cpp_separator">();</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">112</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">113</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;drpc_close</span><span class="cpp_separator">(</span><span class="cpp_plain">dss_drpc_ctx</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">114</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dss_drpc_ctx&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">115</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">116</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">117</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">out_path</span><span class="cpp_operator">:</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">118</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;D_FREE</span><span class="cpp_separator">(</span><span class="cpp_plain">path</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">119</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">out</span><span class="cpp_operator">:</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">120</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">121</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">122</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">123</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_keyword">void</span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">124<a name='124'/></td>
+<td class="line"><img src='../images/uncheck_icon.png'></td>
+<td class="code"><span class="cpp_plain">drpc_fini</span><span class="cpp_separator">(</span><span class="cpp_keyword">void</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">125</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">126</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">127</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">128</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;D_ASSERT</span><span class="cpp_separator">(</span><span class="cpp_plain">dss_drpc_ctx&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">129</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;drpc_close</span><span class="cpp_separator">(</span><span class="cpp_plain">dss_drpc_ctx</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">130</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;D_ASSERTF</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;%d\n&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">131</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;dss_drpc_ctx&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">132</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">}</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="footer">Report generated by <a href="http://bullshtml.googlecode.com" target="_top">Bullseye Html Reporter</a> </div> 
+</body> 
+</html>
