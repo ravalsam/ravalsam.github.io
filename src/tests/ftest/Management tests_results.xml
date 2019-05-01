@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-  <testsuite name="Management tests" time="1.900" tests="2" failures="0" errors="0" skipped="0" >
-    <testcase name="MGMT1: create/destroy pool on all tgts" time="1.080" >
-    </testcase>
-    <testcase name="MGMT2: create/destroy pool on all tgts (async)" time="0.820" >
-    </testcase>
-  </testsuite>
-</testsuites>
