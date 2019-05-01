@@ -40,11 +40,11 @@
 			<td class='value'>9</td>
 			<td><table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 					<tr class='percentgraph'>
-						<td align='right' class='percentgraph' width='40'>33.3%</td>
+						<td align='right' class='percentgraph' width='40'>55.6%</td>
 						<td class='percentgraph'>
 							<div class='percentgraph'>
-								<div class='greenbar' style='width:33px'>
-									<span class='text'>3/9</span>
+								<div class='greenbar' style='width:56px'>
+									<span class='text'>5/9</span>
 								</div>
 							</div>
 						</td>
@@ -54,11 +54,11 @@
 			<td>
 				<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 					<tr class='percentgraph'>
-						<td align='right' class='percentgraph' width='40'>35.2%</td>
+						<td align='right' class='percentgraph' width='40'>40.7%</td>
 						<td class='percentgraph'>
 							<div class='percentgraph'>
-								<div class='greenbar' style='width:35px'>
-									<span class='text'>19/54</span>
+								<div class='greenbar' style='width:41px'>
+									<span class='text'>22/54</span>
 								</div>
 							</div>
 						</td>
@@ -86,16 +86,16 @@
 			<tr>
 					<td><a href='#32'>crt_proc_struct_pool_target_addr(crt_proc_t,struct pool_target_addr*)</a></td>
 					<td>
-							Not Covered
+							Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 							<tr class='percentgraph'>
-								<td align='right' class='percentgraph' width='40'>0.0%</td>
+								<td align='right' class='percentgraph' width='40'>50.0%</td>
 								<td class='percentgraph'>
 									<div class='percentgraph'>
-										<div class='greenbar' style='width:0.0px'>
-											<span class='text'>0/4</span>
+										<div class='greenbar' style='width:50.0px'>
+											<span class='text'>2/4</span>
 										</div>
 									</div>
 								</td>
@@ -226,16 +226,16 @@
 		<tr>
 					<td><a href='#240'>pool_target_addr_list_alloc(unsigned int,struct pool_target_addr_list*)</a></td>
 					<td>
-							Not Covered
+							Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 							<tr class='percentgraph'>
-								<td align='right' class='percentgraph' width='40'>0.0%</td>
+								<td align='right' class='percentgraph' width='40'>50.0%</td>
 								<td class='percentgraph'>
 									<div class='percentgraph'>
-										<div class='greenbar' style='width:0.0px'>
-											<span class='text'>0/2</span>
+										<div class='greenbar' style='width:50.0px'>
+											<span class='text'>1/2</span>
 										</div>
 									</div>
 								</td>
@@ -463,9 +463,9 @@
 <td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">32<a name='32'/></td>
-<td class="line"><img src='../images/uncheck_icon.png'></td>
+<td class="line"><img src='../images/check_icon.png'></td>
 <td class="code"><span class="cpp_plain">crt_proc_struct_pool_target_addr</span><span class="cpp_separator">(</span><span class="cpp_plain">crt_proc_t&nbsp;proc</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">tgt</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -493,9 +493,9 @@
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;crt_proc_uint32_t</span><span class="cpp_separator">(</span><span class="cpp_plain">proc</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">tgt</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">pta_rank</span><span class="cpp_separator">);</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="halfcovered">
 <td class="line">37</td>
-<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -517,9 +517,9 @@
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;crt_proc_uint32_t</span><span class="cpp_separator">(</span><span class="cpp_plain">proc</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">tgt</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">pta_target</span><span class="cpp_separator">);</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="halfcovered">
 <td class="line">41</td>
-<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -1711,9 +1711,9 @@
 <td class="code"><span class="cpp_type">int</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">240<a name='240'/></td>
-<td class="line"><img src='../images/uncheck_icon.png'></td>
+<td class="line"><img src='../images/check_icon.png'></td>
 <td class="code"><span class="cpp_plain">pool_target_addr_list_alloc</span><span class="cpp_separator">(</span><span class="cpp_keyword">unsigned</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;num</span><span class="cpp_separator">,</span>
 </td>
 </tr>
@@ -1735,9 +1735,9 @@
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;D_ALLOC_ARRAY</span><span class="cpp_separator">(</span><span class="cpp_plain">addr_list</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">pta_addrs</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;num</span><span class="cpp_separator">);</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="halfcovered">
 <td class="line">244</td>
-<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">addr_list</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">pta_addrs&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">)</span>
 </td>
 </tr>

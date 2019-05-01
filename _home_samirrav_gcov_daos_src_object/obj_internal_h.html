@@ -40,11 +40,11 @@
 			<td class='value'>4</td>
 			<td><table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 					<tr class='percentgraph'>
-						<td align='right' class='percentgraph' width='40'>0.0%</td>
+						<td align='right' class='percentgraph' width='40'>75.0%</td>
 						<td class='percentgraph'>
 							<div class='percentgraph'>
-								<div class='greenbar' style='width:0px'>
-									<span class='text'>0/4</span>
+								<div class='greenbar' style='width:75px'>
+									<span class='text'>3/4</span>
 								</div>
 							</div>
 						</td>
@@ -54,11 +54,11 @@
 			<td>
 				<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 					<tr class='percentgraph'>
-						<td align='right' class='percentgraph' width='40'>0.0%</td>
+						<td align='right' class='percentgraph' width='40'>50.0%</td>
 						<td class='percentgraph'>
 							<div class='percentgraph'>
-								<div class='greenbar' style='width:0px'>
-									<span class='text'>0/2</span>
+								<div class='greenbar' style='width:50px'>
+									<span class='text'>1/2</span>
 								</div>
 							</div>
 						</td>
@@ -86,7 +86,7 @@
 			<tr>
 					<td><a href='#124'>enum_anchor_copy(daos_anchor_t*,daos_anchor_t*)</a></td>
 					<td>
-							Not Covered
+							Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
@@ -126,7 +126,7 @@
 		<tr>
 					<td><a href='#195'>obj_retry_error(int)</a></td>
 					<td>
-							Not Covered
+							Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
@@ -146,16 +146,16 @@
 		<tr>
 					<td><a href='#227'>obj_dkey2hash(daos_key_t*)</a></td>
 					<td>
-							Not Covered
+							Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 							<tr class='percentgraph'>
-								<td align='right' class='percentgraph' width='40'>0.0%</td>
+								<td align='right' class='percentgraph' width='40'>50.0%</td>
 								<td class='percentgraph'>
 									<div class='percentgraph'>
-										<div class='greenbar' style='width:0.0px'>
-											<span class='text'>0/2</span>
+										<div class='greenbar' style='width:50.0px'>
+											<span class='text'>1/2</span>
 										</div>
 									</div>
 								</td>
@@ -915,9 +915,9 @@
 <td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">inline</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">void</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">124<a name='124'/></td>
-<td class="line"><img src='../images/uncheck_icon.png'></td>
+<td class="line"><img src='../images/check_icon.png'></td>
 <td class="code"><span class="cpp_plain">enum_anchor_copy</span><span class="cpp_separator">(</span><span class="cpp_plain">daos_anchor_t&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">dst</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;daos_anchor_t&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">src</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -1341,9 +1341,9 @@
 <td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">inline</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">bool</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">195<a name='195'/></td>
-<td class="line"><img src='../images/uncheck_icon.png'></td>
+<td class="line"><img src='../images/check_icon.png'></td>
 <td class="code"><span class="cpp_plain">obj_retry_error</span><span class="cpp_separator">(</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;err</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -1533,9 +1533,9 @@
 <td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">inline</span><span class="cpp_plain">&nbsp;uint64_t</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">227<a name='227'/></td>
-<td class="line"><img src='../images/uncheck_icon.png'></td>
+<td class="line"><img src='../images/check_icon.png'></td>
 <td class="code"><span class="cpp_plain">obj_dkey2hash</span><span class="cpp_separator">(</span><span class="cpp_plain">daos_key_t&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">dkey</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -1551,9 +1551,9 @@
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;return&nbsp;0&nbsp;for&nbsp;NULL&nbsp;dkey,&nbsp;for&nbsp;example&nbsp;obj&nbsp;punch&nbsp;and&nbsp;list&nbsp;dkey&nbsp;*/</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="halfcovered">
 <td class="line">230</td>
-<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">dkey&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">)</span>
 </td>
 </tr>

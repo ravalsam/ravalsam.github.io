@@ -40,11 +40,11 @@
 			<td class='value'>8</td>
 			<td><table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 					<tr class='percentgraph'>
-						<td align='right' class='percentgraph' width='40'>37.5%</td>
+						<td align='right' class='percentgraph' width='40'>87.5%</td>
 						<td class='percentgraph'>
 							<div class='percentgraph'>
-								<div class='greenbar' style='width:38px'>
-									<span class='text'>3/8</span>
+								<div class='greenbar' style='width:88px'>
+									<span class='text'>7/8</span>
 								</div>
 							</div>
 						</td>
@@ -54,11 +54,11 @@
 			<td>
 				<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 					<tr class='percentgraph'>
-						<td align='right' class='percentgraph' width='40'>15.0%</td>
+						<td align='right' class='percentgraph' width='40'>85.0%</td>
 						<td class='percentgraph'>
 							<div class='percentgraph'>
-								<div class='greenbar' style='width:15px'>
-									<span class='text'>3/20</span>
+								<div class='greenbar' style='width:85px'>
+									<span class='text'>17/20</span>
 								</div>
 							</div>
 						</td>
@@ -111,11 +111,11 @@
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 							<tr class='percentgraph'>
-								<td align='right' class='percentgraph' width='40'>12.5%</td>
+								<td align='right' class='percentgraph' width='40'>87.5%</td>
 								<td class='percentgraph'>
 									<div class='percentgraph'>
-										<div class='greenbar' style='width:12.5px'>
-											<span class='text'>1/8</span>
+										<div class='greenbar' style='width:87.5px'>
+											<span class='text'>7/8</span>
 										</div>
 									</div>
 								</td>
@@ -126,16 +126,16 @@
 		<tr>
 					<td><a href='#81'>daos_fail_loc_set(uint64_t)</a></td>
 					<td>
-							Not Covered
+							Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 							<tr class='percentgraph'>
-								<td align='right' class='percentgraph' width='40'>0.0%</td>
+								<td align='right' class='percentgraph' width='40'>100.0%</td>
 								<td class='percentgraph'>
 									<div class='percentgraph'>
-										<div class='greenbar' style='width:0.0px'>
-											<span class='text'>0/8</span>
+										<div class='greenbar' style='width:100.0px'>
+											<span class='text'>8/8</span>
 										</div>
 									</div>
 								</td>
@@ -146,7 +146,7 @@
 		<tr>
 					<td><a href='#111'>daos_fail_num_set(uint64_t)</a></td>
 					<td>
-							Not Covered
+							Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
@@ -166,7 +166,7 @@
 		<tr>
 					<td><a href='#117'>daos_fail_value_set(uint64_t)</a></td>
 					<td>
-							Not Covered
+							Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
@@ -186,7 +186,7 @@
 		<tr>
 					<td><a href='#123'>daos_fail_value_get(void)</a></td>
 					<td>
-							Not Covered
+							Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
@@ -551,9 +551,9 @@
 <td class="code"></span>
 </td>
 </tr>
-<tr class="halfcovered">
+<tr class="covered">
 <td class="line">50</td>
-<td class="line"><span class='coveredmark'>T</span><span class='uncoveredmark'>F</span></td>
+<td class="line"><span class='coveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">daos_fail_loc&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -569,9 +569,9 @@
 <td class="code"></span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">53</td>
-<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="line"><span class='coveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">daos_fail_loc&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_FAIL_MASK_LOC</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">!=</span>
 </td>
 </tr>
@@ -629,9 +629,9 @@
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;attr&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;d_fault_attr_lookup</span><span class="cpp_separator">(</span><span class="cpp_plain">grp</span><span class="cpp_separator">);</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="halfcovered">
 <td class="line">63</td>
-<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">attr&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
 </td>
 </tr>
@@ -671,9 +671,9 @@
 <td class="code"></span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">70</td>
-<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="line"><span class='coveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">d_should_fail</span><span class="cpp_separator">(</span><span class="cpp_plain">attr</span><span class="cpp_separator">))</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
 </td>
 </tr>
@@ -737,9 +737,9 @@
 <td class="code"><span class="cpp_keyword">void</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">81<a name='81'/></td>
-<td class="line"><img src='../images/uncheck_icon.png'></td>
+<td class="line"><img src='../images/check_icon.png'></td>
 <td class="code"><span class="cpp_plain">daos_fail_loc_set</span><span class="cpp_separator">(</span><span class="cpp_plain">uint64_t&nbsp;fail_loc</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -767,9 +767,9 @@
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;If&nbsp;fail_loc&nbsp;is&nbsp;0,&nbsp;let's&nbsp;assume&nbsp;it&nbsp;will&nbsp;reset&nbsp;unit&nbsp;test&nbsp;fail&nbsp;loc&nbsp;*/</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">86</td>
-<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="line"><span class='coveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">fail_loc&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -827,9 +827,9 @@
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;attr_in</span><span class="cpp_separator">.</span><span class="cpp_plain">fa_probability_y&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">1</span><span class="cpp_separator">;</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">96</td>
-<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="line"><span class='coveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">fail_loc&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_FAIL_ONCE</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
 </td>
 </tr>
@@ -839,9 +839,9 @@
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;attr_in</span><span class="cpp_separator">.</span><span class="cpp_plain">fa_max_faults&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">1</span><span class="cpp_separator">;</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">98</td>
-<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="line"><span class='coveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">else</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">fail_loc&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_FAIL_SOME</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
 </td>
 </tr>
@@ -857,9 +857,9 @@
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;attr_in</span><span class="cpp_separator">.</span><span class="cpp_plain">fa_max_faults&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;daos_fail_num</span><span class="cpp_separator">;</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">101</td>
-<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="line"><span class='coveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">else</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">fail_loc&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_FAIL_ALWAYS</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
 </td>
 </tr>
@@ -917,9 +917,9 @@
 <td class="code"><span class="cpp_keyword">void</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">111<a name='111'/></td>
-<td class="line"><img src='../images/uncheck_icon.png'></td>
+<td class="line"><img src='../images/check_icon.png'></td>
 <td class="code"><span class="cpp_plain">daos_fail_num_set</span><span class="cpp_separator">(</span><span class="cpp_plain">uint64_t&nbsp;</span><span class="cpp_keyword">value</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -953,9 +953,9 @@
 <td class="code"><span class="cpp_keyword">void</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">117<a name='117'/></td>
-<td class="line"><img src='../images/uncheck_icon.png'></td>
+<td class="line"><img src='../images/check_icon.png'></td>
 <td class="code"><span class="cpp_plain">daos_fail_value_set</span><span class="cpp_separator">(</span><span class="cpp_plain">uint64_t&nbsp;</span><span class="cpp_keyword">value</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -989,9 +989,9 @@
 <td class="code"><span class="cpp_plain">uint64_t</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">123<a name='123'/></td>
-<td class="line"><img src='../images/uncheck_icon.png'></td>
+<td class="line"><img src='../images/check_icon.png'></td>
 <td class="code"><span class="cpp_plain">daos_fail_value_get</span><span class="cpp_separator">(</span><span class="cpp_keyword">void</span><span class="cpp_separator">)</span>
 </td>
 </tr>

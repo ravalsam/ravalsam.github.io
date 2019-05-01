@@ -40,11 +40,11 @@
 			<td class='value'>4</td>
 			<td><table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 					<tr class='percentgraph'>
-						<td align='right' class='percentgraph' width='40'>50.0%</td>
+						<td align='right' class='percentgraph' width='40'>0.0%</td>
 						<td class='percentgraph'>
 							<div class='percentgraph'>
-								<div class='greenbar' style='width:50px'>
-									<span class='text'>2/4</span>
+								<div class='greenbar' style='width:0px'>
+									<span class='text'>0/4</span>
 								</div>
 							</div>
 						</td>
@@ -54,11 +54,11 @@
 			<td>
 				<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 					<tr class='percentgraph'>
-						<td align='right' class='percentgraph' width='40'>50.0%</td>
+						<td align='right' class='percentgraph' width='40'>0.0%</td>
 						<td class='percentgraph'>
 							<div class='percentgraph'>
-								<div class='greenbar' style='width:50px'>
-									<span class='text'>4/8</span>
+								<div class='greenbar' style='width:0px'>
+									<span class='text'>0/8</span>
 								</div>
 							</div>
 						</td>
@@ -86,16 +86,16 @@
 			<tr>
 					<td><a href='#37'>init(void)</a></td>
 					<td>
-							Covered
+							Not Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 							<tr class='percentgraph'>
-								<td align='right' class='percentgraph' width='40'>50.0%</td>
+								<td align='right' class='percentgraph' width='40'>0.0%</td>
 								<td class='percentgraph'>
 									<div class='percentgraph'>
-										<div class='greenbar' style='width:50.0px'>
-											<span class='text'>1/2</span>
+										<div class='greenbar' style='width:0.0px'>
+											<span class='text'>0/2</span>
 										</div>
 									</div>
 								</td>
@@ -126,16 +126,16 @@
 		<tr>
 					<td><a href='#105'>dsm_tls_init(const struct dss_thread_local_storage*,struct dss_module_key*)</a></td>
 					<td>
-							Covered
+							Not Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 							<tr class='percentgraph'>
-								<td align='right' class='percentgraph' width='40'>50.0%</td>
+								<td align='right' class='percentgraph' width='40'>0.0%</td>
 								<td class='percentgraph'>
 									<div class='percentgraph'>
-										<div class='greenbar' style='width:50.0px'>
-											<span class='text'>3/6</span>
+										<div class='greenbar' style='width:0.0px'>
+											<span class='text'>0/6</span>
 										</div>
 									</div>
 								</td>
@@ -393,9 +393,9 @@
 <td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
 </td>
 </tr>
-<tr class="covered">
+<tr class="uncovered">
 <td class="line">37<a name='37'/></td>
-<td class="line"><img src='../images/check_icon.png'></td>
+<td class="line"><img src='../images/uncheck_icon.png'></td>
 <td class="code"><span class="cpp_plain">init</span><span class="cpp_separator">(</span><span class="cpp_keyword">void</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -423,9 +423,9 @@
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;ds_oid_iv_init</span><span class="cpp_separator">();</span>
 </td>
 </tr>
-<tr class="halfcovered">
+<tr class="uncovered">
 <td class="line">42</td>
-<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -801,9 +801,9 @@
 <td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">void</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">*</span>
 </td>
 </tr>
-<tr class="covered">
+<tr class="uncovered">
 <td class="line">105<a name='105'/></td>
-<td class="line"><img src='../images/check_icon.png'></td>
+<td class="line"><img src='../images/uncheck_icon.png'></td>
 <td class="code"><span class="cpp_plain">dsm_tls_init</span><span class="cpp_separator">(</span><span class="cpp_keyword">const</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;dss_thread_local_storage&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">dtls</span><span class="cpp_separator">,</span>
 </td>
 </tr>
@@ -843,9 +843,9 @@
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;D_ALLOC_PTR</span><span class="cpp_separator">(</span><span class="cpp_plain">tls</span><span class="cpp_separator">);</span>
 </td>
 </tr>
-<tr class="halfcovered">
+<tr class="uncovered">
 <td class="line">112</td>
-<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tls&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -867,9 +867,9 @@
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;ds_cont_cache_create</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">tls</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">dt_cont_cache</span><span class="cpp_separator">);</span>
 </td>
 </tr>
-<tr class="halfcovered">
+<tr class="uncovered">
 <td class="line">116</td>
-<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
 </td>
 </tr>
@@ -915,9 +915,9 @@
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;ds_cont_hdl_hash_create</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">tls</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">dt_cont_hdl_hash</span><span class="cpp_separator">);</span>
 </td>
 </tr>
-<tr class="halfcovered">
+<tr class="uncovered">
 <td class="line">124</td>
-<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
 </td>
 </tr>

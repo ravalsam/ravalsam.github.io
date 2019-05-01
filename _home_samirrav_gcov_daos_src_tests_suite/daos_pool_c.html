@@ -54,11 +54,11 @@
 			<td>
 				<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 					<tr class='percentgraph'>
-						<td align='right' class='percentgraph' width='40'>60.0%</td>
+						<td align='right' class='percentgraph' width='40'>59.6%</td>
 						<td class='percentgraph'>
 							<div class='percentgraph'>
 								<div class='greenbar' style='width:60px'>
-									<span class='text'>60/100</span>
+									<span class='text'>62/104</span>
 								</div>
 							</div>
 						</td>
@@ -251,11 +251,11 @@
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 							<tr class='percentgraph'>
-								<td align='right' class='percentgraph' width='40'>58.3%</td>
+								<td align='right' class='percentgraph' width='40'>56.3%</td>
 								<td class='percentgraph'>
 									<div class='percentgraph'>
-										<div class='greenbar' style='width:58.3px'>
-											<span class='text'>7/12</span>
+										<div class='greenbar' style='width:56.3px'>
+											<span class='text'>9/16</span>
 										</div>
 									</div>
 								</td>
@@ -264,7 +264,7 @@
 					</td>
 				</tr>
 		<tr>
-					<td><a href='#533'>pool_setup_sync(void**)</a></td>
+					<td><a href='#547'>pool_setup_sync(void**)</a></td>
 					<td>
 							Covered
 					</td>
@@ -284,7 +284,7 @@
 					</td>
 				</tr>
 		<tr>
-					<td><a href='#541'>pool_setup_async(void**)</a></td>
+					<td><a href='#555'>pool_setup_async(void**)</a></td>
 					<td>
 							Covered
 					</td>
@@ -304,7 +304,7 @@
 					</td>
 				</tr>
 		<tr>
-					<td><a href='#549'>setup(void**)</a></td>
+					<td><a href='#563'>setup(void**)</a></td>
 					<td>
 							Covered
 					</td>
@@ -324,7 +324,7 @@
 					</td>
 				</tr>
 		<tr>
-					<td><a href='#580'>run_daos_pool_test(int,int)</a></td>
+					<td><a href='#594'>run_daos_pool_test(int,int)</a></td>
 					<td>
 							Covered
 					</td>
@@ -3318,7 +3318,7 @@
 <tr class="kwnone">
 <td class="line">494</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;assert_int_equal</span><span class="cpp_separator">(</span><span class="cpp_plain">prop_query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">dpp_nr</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">5</span><span class="cpp_separator">);</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;assert_int_equal</span><span class="cpp_separator">(</span><span class="cpp_plain">prop_query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">dpp_nr</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_PROP_PO_NUM</span><span class="cpp_separator">);</span>
 </td>
 </tr>
 <tr class="kwnone">
@@ -3516,371 +3516,455 @@
 <tr class="kwnone">
 <td class="line">527</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_prop_free</span><span class="cpp_separator">(</span><span class="cpp_plain">prop</span><span class="cpp_separator">);</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;entry&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;daos_prop_entry_get</span><span class="cpp_separator">(</span><span class="cpp_plain">prop_query</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_PROP_PO_OWNER</span><span class="cpp_separator">);</span>
 </td>
 </tr>
-<tr class="kwnone">
+<tr class="halfcovered">
 <td class="line">528</td>
-<td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_prop_free</span><span class="cpp_separator">(</span><span class="cpp_plain">prop_query</span><span class="cpp_separator">);</span>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">entry&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL&nbsp;</span><span class="cpp_operator">||</span><span class="cpp_plain">&nbsp;entry</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">dpe_str&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL&nbsp;</span><span class="cpp_operator">||</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">529</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;test_teardown</span><span class="cpp_separator">((</span><span class="cpp_keyword">void</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">**</span><span class="cpp_separator">)</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">arg</span><span class="cpp_separator">);</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strncmp</span><span class="cpp_separator">(</span><span class="cpp_plain">entry</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">dpe_str</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;nobody@&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ACL_MAX_PRINCIPAL_LEN</span><span class="cpp_separator">))</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">530</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_separator">}</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print_message</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;Owner&nbsp;prop&nbsp;verification&nbsp;failed.\n&quot;</span><span class="cpp_separator">);</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">531</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assert_int_equal</span><span class="cpp_separator">(</span><span class="cpp_plain">rc</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">1</span><span class="cpp_separator">);</span><span class="cpp_plain">&nbsp;</span><span class="cpp_comment">/*&nbsp;fail&nbsp;the&nbsp;test&nbsp;*/</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">532</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
 </td>
 </tr>
-<tr class="covered">
-<td class="line">533<a name='533'/></td>
-<td class="line"><img src='../images/check_icon.png'></td>
-<td class="code"><span class="cpp_plain">pool_setup_sync</span><span class="cpp_separator">(</span><span class="cpp_keyword">void</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">**</span><span class="cpp_plain">state</span><span class="cpp_separator">)</span>
+<tr class="kwnone">
+<td class="line">533</td>
+<td class="line"></td>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">534</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_separator">{</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;entry&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;daos_prop_entry_get</span><span class="cpp_separator">(</span><span class="cpp_plain">prop_query</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_PROP_PO_OWNER_GROUP</span><span class="cpp_separator">);</span>
 </td>
 </tr>
-<tr class="kwnone">
+<tr class="halfcovered">
 <td class="line">535</td>
-<td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;async_disable</span><span class="cpp_separator">(</span><span class="cpp_plain">state</span><span class="cpp_separator">);</span>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">entry&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL&nbsp;</span><span class="cpp_operator">||</span><span class="cpp_plain">&nbsp;entry</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">dpe_str&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL&nbsp;</span><span class="cpp_operator">||</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">536</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;test_setup</span><span class="cpp_separator">(</span><span class="cpp_plain">state</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;SETUP_POOL_CONNECT</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">true</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DEFAULT_POOL_SIZE</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strncmp</span><span class="cpp_separator">(</span><span class="cpp_plain">entry</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">dpe_str</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;nobody@&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ACL_MAX_PRINCIPAL_LEN</span><span class="cpp_separator">))</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">537</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NULL</span><span class="cpp_separator">);</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print_message</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;Owner-group&nbsp;prop&nbsp;verification&nbsp;failed.\n&quot;</span><span class="cpp_separator">);</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">538</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_separator">}</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assert_int_equal</span><span class="cpp_separator">(</span><span class="cpp_plain">rc</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">1</span><span class="cpp_separator">);</span><span class="cpp_plain">&nbsp;</span><span class="cpp_comment">/*&nbsp;fail&nbsp;the&nbsp;test&nbsp;*/</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">539</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">540</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
+<td class="code"></span>
 </td>
 </tr>
-<tr class="covered">
-<td class="line">541<a name='541'/></td>
-<td class="line"><img src='../images/check_icon.png'></td>
-<td class="code"><span class="cpp_plain">pool_setup_async</span><span class="cpp_separator">(</span><span class="cpp_keyword">void</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">**</span><span class="cpp_plain">state</span><span class="cpp_separator">)</span>
+<tr class="kwnone">
+<td class="line">541</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_prop_free</span><span class="cpp_separator">(</span><span class="cpp_plain">prop</span><span class="cpp_separator">);</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">542</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_separator">{</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_prop_free</span><span class="cpp_separator">(</span><span class="cpp_plain">prop_query</span><span class="cpp_separator">);</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">543</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;async_enable</span><span class="cpp_separator">(</span><span class="cpp_plain">state</span><span class="cpp_separator">);</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;test_teardown</span><span class="cpp_separator">((</span><span class="cpp_keyword">void</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">**</span><span class="cpp_separator">)</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">arg</span><span class="cpp_separator">);</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">544</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;test_setup</span><span class="cpp_separator">(</span><span class="cpp_plain">state</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;SETUP_POOL_CONNECT</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">true</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DEFAULT_POOL_SIZE</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_separator">}</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">545</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NULL</span><span class="cpp_separator">);</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">546</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_separator">}</span>
+<td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
 </td>
 </tr>
-<tr class="kwnone">
-<td class="line">547</td>
-<td class="line"></td>
-<td class="code"></span>
+<tr class="covered">
+<td class="line">547<a name='547'/></td>
+<td class="line"><img src='../images/check_icon.png'></td>
+<td class="code"><span class="cpp_plain">pool_setup_sync</span><span class="cpp_separator">(</span><span class="cpp_keyword">void</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">**</span><span class="cpp_plain">state</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">548</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
+<td class="code"><span class="cpp_separator">{</span>
 </td>
 </tr>
-<tr class="covered">
-<td class="line">549<a name='549'/></td>
-<td class="line"><img src='../images/check_icon.png'></td>
-<td class="code"><span class="cpp_plain">setup</span><span class="cpp_separator">(</span><span class="cpp_keyword">void</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">**</span><span class="cpp_plain">state</span><span class="cpp_separator">)</span>
+<tr class="kwnone">
+<td class="line">549</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;async_disable</span><span class="cpp_separator">(</span><span class="cpp_plain">state</span><span class="cpp_separator">);</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">550</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_separator">{</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;test_setup</span><span class="cpp_separator">(</span><span class="cpp_plain">state</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;SETUP_POOL_CONNECT</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">true</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DEFAULT_POOL_SIZE</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">551</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;test_setup</span><span class="cpp_separator">(</span><span class="cpp_plain">state</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;SETUP_POOL_CREATE</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">true</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DEFAULT_POOL_SIZE</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NULL</span><span class="cpp_separator">);</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">552</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NULL</span><span class="cpp_separator">);</span>
+<td class="code"><span class="cpp_separator">}</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">553</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_separator">}</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">554</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
 </td>
 </tr>
-<tr class="kwnone">
-<td class="line">555</td>
-<td class="line"></td>
-<td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">const</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">CMUnitTest</span><span class="cpp_plain">&nbsp;pool_tests</span><span class="cpp_separator">[]</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+<tr class="covered">
+<td class="line">555<a name='555'/></td>
+<td class="line"><img src='../images/check_icon.png'></td>
+<td class="code"><span class="cpp_plain">pool_setup_async</span><span class="cpp_separator">(</span><span class="cpp_keyword">void</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">**</span><span class="cpp_plain">state</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">556</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL1:&nbsp;connect&nbsp;to&nbsp;non-existing&nbsp;pool&quot;</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_separator">{</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">557</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool_connect_nonexist</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_case_teardown</span><span class="cpp_separator">},</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;async_enable</span><span class="cpp_separator">(</span><span class="cpp_plain">state</span><span class="cpp_separator">);</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">558</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL2:&nbsp;connect/disconnect&nbsp;to&nbsp;pool&quot;</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;test_setup</span><span class="cpp_separator">(</span><span class="cpp_plain">state</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;SETUP_POOL_CONNECT</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">true</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DEFAULT_POOL_SIZE</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">559</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool_connect</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;async_disable</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_case_teardown</span><span class="cpp_separator">},</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NULL</span><span class="cpp_separator">);</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">560</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL3:&nbsp;connect/disconnect&nbsp;to&nbsp;pool&nbsp;(async)&quot;</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_separator">}</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">561</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool_connect</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;async_enable</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_case_teardown</span><span class="cpp_separator">},</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">562</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL4:&nbsp;pool&nbsp;handle&nbsp;local2global&nbsp;and&nbsp;global2local&quot;</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
 </td>
 </tr>
-<tr class="kwnone">
-<td class="line">563</td>
-<td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool_connect</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;hdl_share_enable</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_case_teardown</span><span class="cpp_separator">},</span>
+<tr class="covered">
+<td class="line">563<a name='563'/></td>
+<td class="line"><img src='../images/check_icon.png'></td>
+<td class="code"><span class="cpp_plain">setup</span><span class="cpp_separator">(</span><span class="cpp_keyword">void</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">**</span><span class="cpp_plain">state</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">564</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL5:&nbsp;exclusive&nbsp;connection&quot;</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_separator">{</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">565</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool_connect_exclusively</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_case_teardown</span><span class="cpp_separator">},</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;test_setup</span><span class="cpp_separator">(</span><span class="cpp_plain">state</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;SETUP_POOL_CREATE</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">true</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DEFAULT_POOL_SIZE</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">566</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;Keep&nbsp;this&nbsp;one&nbsp;at&nbsp;the&nbsp;end,&nbsp;as&nbsp;it&nbsp;excludes&nbsp;target&nbsp;rank&nbsp;1.&nbsp;*/</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NULL</span><span class="cpp_separator">);</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">567</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL6:&nbsp;exclude&nbsp;targets&nbsp;and&nbsp;query&nbsp;pool&nbsp;info&quot;</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_separator">}</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">568</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool_exclude</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;async_disable</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">},</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">569</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL7:&nbsp;set/get/list&nbsp;user-defined&nbsp;pool&nbsp;attributes&nbsp;(sync)&quot;</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">const</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">CMUnitTest</span><span class="cpp_plain">&nbsp;pool_tests</span><span class="cpp_separator">[]</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">570</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool_attribute</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;pool_setup_sync</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_case_teardown</span><span class="cpp_separator">},</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL1:&nbsp;connect&nbsp;to&nbsp;non-existing&nbsp;pool&quot;</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">571</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL8:&nbsp;set/get/list&nbsp;user-defined&nbsp;pool&nbsp;attributes&nbsp;(async)&quot;</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool_connect_nonexist</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_case_teardown</span><span class="cpp_separator">},</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">572</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool_attribute</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;pool_setup_async</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_case_teardown</span><span class="cpp_separator">},</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL2:&nbsp;connect/disconnect&nbsp;to&nbsp;pool&quot;</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">573</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL9:&nbsp;pool&nbsp;reconnect&nbsp;after&nbsp;daos&nbsp;re-init&quot;</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool_connect</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;async_disable</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_case_teardown</span><span class="cpp_separator">},</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">574</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;init_fini_conn</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_case_teardown</span><span class="cpp_separator">},</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL3:&nbsp;connect/disconnect&nbsp;to&nbsp;pool&nbsp;(async)&quot;</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">575</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL10:&nbsp;pool&nbsp;create&nbsp;with&nbsp;properties&nbsp;and&nbsp;query&quot;</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool_connect</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;async_enable</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_case_teardown</span><span class="cpp_separator">},</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">576</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool_properties</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_case_teardown</span><span class="cpp_separator">},</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL4:&nbsp;pool&nbsp;handle&nbsp;local2global&nbsp;and&nbsp;global2local&quot;</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">577</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_separator">};</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool_connect</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;hdl_share_enable</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_case_teardown</span><span class="cpp_separator">},</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">578</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL5:&nbsp;exclusive&nbsp;connection&quot;</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">579</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_type">int</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool_connect_exclusively</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_case_teardown</span><span class="cpp_separator">},</span>
 </td>
 </tr>
-<tr class="covered">
-<td class="line">580<a name='580'/></td>
-<td class="line"><img src='../images/check_icon.png'></td>
-<td class="code"><span class="cpp_plain">run_daos_pool_test</span><span class="cpp_separator">(</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;rank</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;size</span><span class="cpp_separator">)</span>
+<tr class="kwnone">
+<td class="line">580</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;Keep&nbsp;this&nbsp;one&nbsp;at&nbsp;the&nbsp;end,&nbsp;as&nbsp;it&nbsp;excludes&nbsp;target&nbsp;rank&nbsp;1.&nbsp;*/</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">581</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_separator">{</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL6:&nbsp;exclude&nbsp;targets&nbsp;and&nbsp;query&nbsp;pool&nbsp;info&quot;</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">582</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">;</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool_exclude</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;async_disable</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">},</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">583</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL7:&nbsp;set/get/list&nbsp;user-defined&nbsp;pool&nbsp;attributes&nbsp;(sync)&quot;</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">584</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;cmocka_run_group_tests_name</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;Pool&nbsp;tests&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;pool_tests</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool_attribute</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;pool_setup_sync</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_case_teardown</span><span class="cpp_separator">},</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">585</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setup</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_teardown</span><span class="cpp_separator">);</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL8:&nbsp;set/get/list&nbsp;user-defined&nbsp;pool&nbsp;attributes&nbsp;(async)&quot;</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">586</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">MPI_Barrier</span><span class="cpp_separator">(</span><span class="cpp_plain">MPI_COMM_WORLD</span><span class="cpp_separator">);</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool_attribute</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;pool_setup_async</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_case_teardown</span><span class="cpp_separator">},</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">587</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">;</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL9:&nbsp;pool&nbsp;reconnect&nbsp;after&nbsp;daos&nbsp;re-init&quot;</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">588</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;init_fini_conn</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_case_teardown</span><span class="cpp_separator">},</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">589</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;POOL10:&nbsp;pool&nbsp;create&nbsp;with&nbsp;properties&nbsp;and&nbsp;query&quot;</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">590</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pool_properties</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_case_teardown</span><span class="cpp_separator">},</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">591</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">};</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">592</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">593</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_type">int</span>
+</td>
+</tr>
+<tr class="covered">
+<td class="line">594<a name='594'/></td>
+<td class="line"><img src='../images/check_icon.png'></td>
+<td class="code"><span class="cpp_plain">run_daos_pool_test</span><span class="cpp_separator">(</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;rank</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;size</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">595</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">596</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">597</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">598</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;cmocka_run_group_tests_name</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;Pool&nbsp;tests&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;pool_tests</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">599</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setup</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;test_teardown</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">600</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">MPI_Barrier</span><span class="cpp_separator">(</span><span class="cpp_plain">MPI_COMM_WORLD</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">601</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">602</td>
 <td class="line"></td>
 <td class="code"><span class="cpp_separator">}</span>
 </td>

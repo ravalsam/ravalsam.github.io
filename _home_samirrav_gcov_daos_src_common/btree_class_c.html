@@ -40,11 +40,11 @@
 			<td class='value'>65</td>
 			<td><table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 					<tr class='percentgraph'>
-						<td align='right' class='percentgraph' width='40'>0.0%</td>
+						<td align='right' class='percentgraph' width='40'>4.6%</td>
 						<td class='percentgraph'>
 							<div class='percentgraph'>
-								<div class='greenbar' style='width:0px'>
-									<span class='text'>0/65</span>
+								<div class='greenbar' style='width:5px'>
+									<span class='text'>3/65</span>
 								</div>
 							</div>
 						</td>
@@ -54,11 +54,11 @@
 			<td>
 				<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 					<tr class='percentgraph'>
-						<td align='right' class='percentgraph' width='40'>0.0%</td>
+						<td align='right' class='percentgraph' width='40'>1.8%</td>
 						<td class='percentgraph'>
 							<div class='percentgraph'>
-								<div class='greenbar' style='width:0px'>
-									<span class='text'>0/228</span>
+								<div class='greenbar' style='width:2px'>
+									<span class='text'>4/228</span>
 								</div>
 							</div>
 						</td>
@@ -1226,16 +1226,16 @@
 		<tr>
 					<td><a href='#1363'>recx_key_cmp(struct btr_instance*,struct btr_record*,d_iov_t*)</a></td>
 					<td>
-							Not Covered
+							Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 							<tr class='percentgraph'>
-								<td align='right' class='percentgraph' width='40'>0.0%</td>
+								<td align='right' class='percentgraph' width='40'>100.0%</td>
 								<td class='percentgraph'>
 									<div class='percentgraph'>
-										<div class='greenbar' style='width:0.0px'>
-											<span class='text'>0/2</span>
+										<div class='greenbar' style='width:100.0px'>
+											<span class='text'>2/2</span>
 										</div>
 									</div>
 								</td>
@@ -1246,16 +1246,16 @@
 		<tr>
 					<td><a href='#1383'>recx_rec_alloc(struct btr_instance*,d_iov_t*,d_iov_t*,struct btr_record*)</a></td>
 					<td>
-							Not Covered
+							Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 							<tr class='percentgraph'>
-								<td align='right' class='percentgraph' width='40'>0.0%</td>
+								<td align='right' class='percentgraph' width='40'>50.0%</td>
 								<td class='percentgraph'>
 									<div class='percentgraph'>
-										<div class='greenbar' style='width:0.0px'>
-											<span class='text'>0/4</span>
+										<div class='greenbar' style='width:50.0px'>
+											<span class='text'>2/4</span>
 										</div>
 									</div>
 								</td>
@@ -1266,7 +1266,7 @@
 		<tr>
 					<td><a href='#1405'>recx_rec_free(struct btr_instance*,struct btr_record*,void*)</a></td>
 					<td>
-							Not Covered
+							Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
@@ -9569,9 +9569,9 @@
 <td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">1363<a name='1363'/></td>
-<td class="line"><img src='../images/uncheck_icon.png'></td>
+<td class="line"><img src='../images/check_icon.png'></td>
 <td class="code"><span class="cpp_plain">recx_key_cmp</span><span class="cpp_separator">(</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;btr_instance&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">tins</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;btr_record&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">rec</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;daos_iov_t&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">key</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -9611,9 +9611,9 @@
 <td class="code"></span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">1370</td>
-<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="line"><span class='coveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">DAOS_RECX_PTR_OVERLAP</span><span class="cpp_separator">(</span><span class="cpp_plain">r</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">rr_recx</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;key_recx</span><span class="cpp_separator">))</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
 </td>
 </tr>
@@ -9689,9 +9689,9 @@
 <td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">1383<a name='1383'/></td>
-<td class="line"><img src='../images/uncheck_icon.png'></td>
+<td class="line"><img src='../images/check_icon.png'></td>
 <td class="code"><span class="cpp_plain">recx_rec_alloc</span><span class="cpp_separator">(</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;btr_instance&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">tins</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;daos_iov_t&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">key</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;daos_iov_t&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">val</span><span class="cpp_separator">,</span>
 </td>
 </tr>
@@ -9731,9 +9731,9 @@
 <td class="code"></span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="halfcovered">
 <td class="line">1390</td>
-<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">key_recx&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL&nbsp;</span><span class="cpp_operator">||</span><span class="cpp_plain">&nbsp;key</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">iov_len&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">sizeof</span><span class="cpp_separator">(</span><span class="cpp_operator">*</span><span class="cpp_plain">key_recx</span><span class="cpp_separator">))</span>
 </td>
 </tr>
@@ -9755,9 +9755,9 @@
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;roff&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;umem_zalloc_off</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">tins</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">ti_umm</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">sizeof</span><span class="cpp_separator">(</span><span class="cpp_operator">*</span><span class="cpp_plain">r</span><span class="cpp_separator">));</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="halfcovered">
 <td class="line">1394</td>
-<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">UMOFF_IS_NULL</span><span class="cpp_separator">(</span><span class="cpp_plain">roff</span><span class="cpp_separator">))</span>
 </td>
 </tr>
@@ -9821,9 +9821,9 @@
 <td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
 </td>
 </tr>
-<tr class="uncovered">
+<tr class="covered">
 <td class="line">1405<a name='1405'/></td>
-<td class="line"><img src='../images/uncheck_icon.png'></td>
+<td class="line"><img src='../images/check_icon.png'></td>
 <td class="code"><span class="cpp_plain">recx_rec_free</span><span class="cpp_separator">(</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;btr_instance&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">tins</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;btr_record&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">rec</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">void</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">args</span><span class="cpp_separator">)</span>
 </td>
 </tr>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite name="OID Allocator tests" time="66.553" tests="3" failures="0" errors="0" skipped="0" >
+    <testcase name="OID_ALLOC1: Simple OID ALLOCATION (blocking)" time="2.748" >
+    </testcase>
+    <testcase name="OID_ALLOC2: Multiple Cont OID ALLOCATION (blocking)" time="0.756" >
+    </testcase>
+    <testcase name="OID_ALLOC3: OID Allocator check (blocking)" time="63.049" >
+    </testcase>
+  </testsuite>
+</testsuites>

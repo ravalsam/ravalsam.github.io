@@ -40,11 +40,11 @@
 			<td class='value'>14</td>
 			<td><table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 					<tr class='percentgraph'>
-						<td align='right' class='percentgraph' width='40'>21.4%</td>
+						<td align='right' class='percentgraph' width='40'>0.0%</td>
 						<td class='percentgraph'>
 							<div class='percentgraph'>
-								<div class='greenbar' style='width:21px'>
-									<span class='text'>3/14</span>
+								<div class='greenbar' style='width:0px'>
+									<span class='text'>0/14</span>
 								</div>
 							</div>
 						</td>
@@ -54,11 +54,11 @@
 			<td>
 				<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 					<tr class='percentgraph'>
-						<td align='right' class='percentgraph' width='40'>6.3%</td>
+						<td align='right' class='percentgraph' width='40'>0.0%</td>
 						<td class='percentgraph'>
 							<div class='percentgraph'>
-								<div class='greenbar' style='width:6px'>
-									<span class='text'>4/64</span>
+								<div class='greenbar' style='width:0px'>
+									<span class='text'>0/64</span>
 								</div>
 							</div>
 						</td>
@@ -226,16 +226,16 @@
 		<tr>
 					<td><a href='#248'>vos_dtx_cos_register(void)</a></td>
 					<td>
-							Covered
+							Not Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 							<tr class='percentgraph'>
-								<td align='right' class='percentgraph' width='40'>50.0%</td>
+								<td align='right' class='percentgraph' width='40'>0.0%</td>
 								<td class='percentgraph'>
 									<div class='percentgraph'>
-										<div class='greenbar' style='width:50.0px'>
-											<span class='text'>1/2</span>
+										<div class='greenbar' style='width:0.0px'>
+											<span class='text'>0/2</span>
 										</div>
 									</div>
 								</td>
@@ -306,16 +306,16 @@
 		<tr>
 					<td><a href='#432'>vos_dtx_fetch_committable(daos_handle_t,int,struct dtx_entry**)</a></td>
 					<td>
-							Covered
+							Not Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 							<tr class='percentgraph'>
-								<td align='right' class='percentgraph' width='40'>25.0%</td>
+								<td align='right' class='percentgraph' width='40'>0.0%</td>
 								<td class='percentgraph'>
 									<div class='percentgraph'>
-										<div class='greenbar' style='width:25.0px'>
-											<span class='text'>2/8</span>
+										<div class='greenbar' style='width:0.0px'>
+											<span class='text'>0/8</span>
 										</div>
 									</div>
 								</td>
@@ -346,16 +346,16 @@
 		<tr>
 					<td><a href='#524'>vos_dtx_cos_oldest(struct vos_container*)</a></td>
 					<td>
-							Covered
+							Not Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 							<tr class='percentgraph'>
-								<td align='right' class='percentgraph' width='40'>50.0%</td>
+								<td align='right' class='percentgraph' width='40'>0.0%</td>
 								<td class='percentgraph'>
 									<div class='percentgraph'>
-										<div class='greenbar' style='width:50.0px'>
-											<span class='text'>1/2</span>
+										<div class='greenbar' style='width:0.0px'>
+											<span class='text'>0/2</span>
 										</div>
 									</div>
 								</td>
@@ -1859,9 +1859,9 @@
 <td class="code"><span class="cpp_type">int</span>
 </td>
 </tr>
-<tr class="covered">
+<tr class="uncovered">
 <td class="line">248<a name='248'/></td>
-<td class="line"><img src='../images/check_icon.png'></td>
+<td class="line"><img src='../images/uncheck_icon.png'></td>
 <td class="code"><span class="cpp_plain">vos_dtx_cos_register</span><span class="cpp_separator">(</span><span class="cpp_keyword">void</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -1907,9 +1907,9 @@
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;dbtree_class_register</span><span class="cpp_separator">(</span><span class="cpp_plain">VOS_BTR_DTX_COS</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">dtx_btr_cos_ops</span><span class="cpp_separator">);</span>
 </td>
 </tr>
-<tr class="halfcovered">
+<tr class="uncovered">
 <td class="line">256</td>
-<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -2963,9 +2963,9 @@
 <td class="code"><span class="cpp_type">int</span>
 </td>
 </tr>
-<tr class="covered">
+<tr class="uncovered">
 <td class="line">432<a name='432'/></td>
-<td class="line"><img src='../images/check_icon.png'></td>
+<td class="line"><img src='../images/uncheck_icon.png'></td>
 <td class="code"><span class="cpp_plain">vos_dtx_fetch_committable</span><span class="cpp_separator">(</span><span class="cpp_plain">daos_handle_t&nbsp;coh</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;max</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;dtx_entry&nbsp;</span><span class="cpp_operator">**</span><span class="cpp_plain">dtes</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -3029,9 +3029,9 @@
 <td class="code"></span>
 </td>
 </tr>
-<tr class="halfcovered">
+<tr class="uncovered">
 <td class="line">443</td>
-<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">cont</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">vc_dtx_committable_count&nbsp;</span><span class="cpp_operator">&gt;</span><span class="cpp_plain">&nbsp;max</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -3059,9 +3059,9 @@
 <td class="code"></span>
 </td>
 </tr>
-<tr class="halfcovered">
+<tr class="uncovered">
 <td class="line">448</td>
-<td class="line"><span class='coveredmark'>T</span><span class='uncoveredmark'>F</span></td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">count&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
 </td>
 </tr>
@@ -3515,9 +3515,9 @@
 <td class="code"><span class="cpp_plain">uint64_t</span>
 </td>
 </tr>
-<tr class="covered">
+<tr class="uncovered">
 <td class="line">524<a name='524'/></td>
-<td class="line"><img src='../images/check_icon.png'></td>
+<td class="line"><img src='../images/uncheck_icon.png'></td>
 <td class="code"><span class="cpp_plain">vos_dtx_cos_oldest</span><span class="cpp_separator">(</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;vos_container&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">cont</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -3539,9 +3539,9 @@
 <td class="code"></span>
 </td>
 </tr>
-<tr class="halfcovered">
+<tr class="uncovered">
 <td class="line">528</td>
-<td class="line"><span class='coveredmark'>T</span><span class='uncoveredmark'>F</span></td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">d_list_empty</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">cont</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">vc_dtx_committable</span><span class="cpp_separator">))</span>
 </td>
 </tr>

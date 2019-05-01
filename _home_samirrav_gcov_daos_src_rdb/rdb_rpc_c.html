@@ -40,11 +40,11 @@
 			<td class='value'>18</td>
 			<td><table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 					<tr class='percentgraph'>
-						<td align='right' class='percentgraph' width='40'>11.1%</td>
+						<td align='right' class='percentgraph' width='40'>0.0%</td>
 						<td class='percentgraph'>
 							<div class='percentgraph'>
-								<div class='greenbar' style='width:11px'>
-									<span class='text'>2/18</span>
+								<div class='greenbar' style='width:0px'>
+									<span class='text'>0/18</span>
 								</div>
 							</div>
 						</td>
@@ -54,11 +54,11 @@
 			<td>
 				<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 					<tr class='percentgraph'>
-						<td align='right' class='percentgraph' width='40'>3.4%</td>
+						<td align='right' class='percentgraph' width='40'>0.0%</td>
 						<td class='percentgraph'>
 							<div class='percentgraph'>
-								<div class='greenbar' style='width:3px'>
-									<span class='text'>4/116</span>
+								<div class='greenbar' style='width:0px'>
+									<span class='text'>0/116</span>
 								</div>
 							</div>
 						</td>
@@ -366,16 +366,16 @@
 		<tr>
 					<td><a href='#361'>rdb_recvd(void*)</a></td>
 					<td>
-							Covered
+							Not Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
 							<tr class='percentgraph'>
-								<td align='right' class='percentgraph' width='40'>50.0%</td>
+								<td align='right' class='percentgraph' width='40'>0.0%</td>
 								<td class='percentgraph'>
 									<div class='percentgraph'>
-										<div class='greenbar' style='width:50.0px'>
-											<span class='text'>4/8</span>
+										<div class='greenbar' style='width:0.0px'>
+											<span class='text'>0/8</span>
 										</div>
 									</div>
 								</td>
@@ -426,7 +426,7 @@
 		<tr>
 					<td><a href='#474'>rdb_abort_raft_rpcs(struct rdb*)</a></td>
 					<td>
-							Covered
+							Not Covered
 					</td>
 					<td>
 						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
@@ -2617,9 +2617,9 @@
 <td class="code"><span class="cpp_keyword">void</span>
 </td>
 </tr>
-<tr class="covered">
+<tr class="uncovered">
 <td class="line">361<a name='361'/></td>
-<td class="line"><img src='../images/check_icon.png'></td>
+<td class="line"><img src='../images/uncheck_icon.png'></td>
 <td class="code"><span class="cpp_plain">rdb_recvd</span><span class="cpp_separator">(</span><span class="cpp_keyword">void</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">arg</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -2689,9 +2689,9 @@
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stop&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;db</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">d_stop</span><span class="cpp_separator">;</span>
 </td>
 </tr>
-<tr class="halfcovered">
+<tr class="uncovered">
 <td class="line">373</td>
-<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_operator">!</span><span class="cpp_plain">d_list_empty</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">db</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">d_replies</span><span class="cpp_separator">))</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
 </td>
 </tr>
@@ -2731,9 +2731,9 @@
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
 </td>
 </tr>
-<tr class="covered">
+<tr class="uncovered">
 <td class="line">380</td>
-<td class="line"><span class='coveredmark'>TF</span></td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">stop</span><span class="cpp_separator">)</span>
 </td>
 </tr>
@@ -2761,9 +2761,9 @@
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">ABT_mutex_unlock</span><span class="cpp_separator">(</span><span class="cpp_plain">db</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">d_mutex</span><span class="cpp_separator">);</span>
 </td>
 </tr>
-<tr class="halfcovered">
+<tr class="uncovered">
 <td class="line">385</td>
-<td class="line"><span class='coveredmark'>T</span><span class='uncoveredmark'>F</span></td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
 <td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rrpc&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
 </td>
 </tr>
@@ -3295,9 +3295,9 @@
 <td class="code"><span class="cpp_type">int</span>
 </td>
 </tr>
-<tr class="covered">
+<tr class="uncovered">
 <td class="line">474<a name='474'/></td>
-<td class="line"><img src='../images/check_icon.png'></td>
+<td class="line"><img src='../images/uncheck_icon.png'></td>
 <td class="code"><span class="cpp_plain">rdb_abort_raft_rpcs</span><span class="cpp_separator">(</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;rdb&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">db</span><span class="cpp_separator">)</span>
 </td>
 </tr>

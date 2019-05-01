@@ -84,7 +84,7 @@
 	</thead> 
 	<tbody> 
 			<tr>
-					<td><a href='#349'>pool_req_create(crt_context_t,crt_endpoint_t*,crt_opcode_t,crt_rpc_t**)</a></td>
+					<td><a href='#352'>pool_req_create(crt_context_t,crt_endpoint_t*,crt_opcode_t,crt_rpc_t**)</a></td>
 					<td>
 							Covered
 					</td>
@@ -1248,205 +1248,205 @@
 <tr class="kwnone">
 <td class="line">189</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_OWNER&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">1ULL&nbsp;</span><span class="cpp_operator">&lt;&lt;</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">21</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">190</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_ALL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_OWNER_GROUP&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">1ULL&nbsp;</span><span class="cpp_operator">&lt;&lt;</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">22</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">191</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">DAOS_PO_QUERY_PROP_LABEL&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_SPACE_RB&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">192</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_PO_QUERY_PROP_SELF_HEAL&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_RECLAIM&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_ALL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">193</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_PO_QUERY_PROP_ACL</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">DAOS_PO_QUERY_PROP_LABEL&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_SPACE_RB&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">194</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_PO_QUERY_PROP_SELF_HEAL&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_RECLAIM&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">195</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_QUERY&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_PO_QUERY_PROP_ACL&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_OWNER&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">196</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_PO_QUERY_PROP_OWNER_GROUP</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">197</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">crt_bulk_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqi_map_bulk</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">198</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqi_query_bits</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_QUERY&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">199</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">200</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_QUERY&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">crt_bulk_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqi_map_bulk</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">201</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_out</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqi_query_bits</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">202</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_uid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">203</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_gid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_QUERY&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">204</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_mode</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_out</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">205</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;only&nbsp;set&nbsp;on&nbsp;-DER_TRUNC&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_uid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">206</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_map_buf_size</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_gid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">207</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">daos_prop_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_prop</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_PTR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_mode</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">208</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;daos_pool_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;only&nbsp;set&nbsp;on&nbsp;-DER_TRUNC&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">209</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;daos_rebuild_status</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_rebuild_st</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_map_buf_size</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">210</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">daos_prop_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_prop</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_PTR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">211</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_query</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_QUERY</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_QUERY</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;daos_pool_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">212</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;daos_rebuild_status</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_rebuild_st</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">213</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_ATTR_LIST&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">214</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pali_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_query</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_QUERY</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_QUERY</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">215</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">crt_bulk_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pali_bulk</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">216</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_ATTR_LIST&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">217</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_ATTR_LIST&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pali_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">218</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_out</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">palo_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">crt_bulk_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pali_bulk</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">219</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">palo_size</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">220</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_ATTR_LIST&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">221</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_attr_list</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_ATTR_LIST</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_out</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">palo_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">222</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_ATTR_LIST</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">palo_size</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
@@ -1458,379 +1458,379 @@
 <tr class="kwnone">
 <td class="line">224</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_ATTR_GET&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_attr_list</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_ATTR_LIST</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">225</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pagi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_ATTR_LIST</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">226</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pagi_count</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">227</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pagi_key_length</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_ATTR_GET&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">228</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">crt_bulk_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pagi_bulk</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pagi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">229</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pagi_count</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">230</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_attr_get</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_ATTR_GET</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_OP</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pagi_key_length</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">231</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">crt_bulk_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pagi_bulk</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">232</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_ATTR_SET&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">233</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pasi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_attr_get</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_ATTR_GET</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_OP</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">234</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pasi_count</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">235</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">crt_bulk_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pasi_bulk</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_ATTR_SET&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">236</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pasi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">237</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_attr_set</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_ATTR_SET</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_OP</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pasi_count</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">238</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">crt_bulk_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pasi_bulk</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">239</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_MEMBERSHIP&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">240</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pmi_uuid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_attr_set</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_ATTR_SET</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_OP</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">241</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">d_rank_list_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pmi_targets</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_PTR</span><span class="cpp_separator">)</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">242</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_MEMBERSHIP&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">243</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_MEMBERSHIP&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pmi_uuid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">244</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">int32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pmo_rc</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">d_rank_list_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pmi_targets</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_PTR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">245</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;rsvc_hint</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pmo_hint</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">246</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">d_rank_list_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pmo_failed</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_PTR</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_MEMBERSHIP&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">247</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">int32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pmo_rc</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">248</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_membership</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_MEMBERSHIP</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;rsvc_hint</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pmo_hint</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">249</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_MEMBERSHIP</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">d_rank_list_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pmo_failed</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_PTR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">250</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_replicas_add</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_MEMBERSHIP</span><span class="cpp_separator">,</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">251</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_MEMBERSHIP</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_membership</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_MEMBERSHIP</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">252</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_replicas_remove</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_MEMBERSHIP</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_MEMBERSHIP</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">253</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_MEMBERSHIP</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_replicas_add</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_MEMBERSHIP</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">254</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_MEMBERSHIP</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">255</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_doxygen_comment">/**&nbsp;Target&nbsp;address&nbsp;for&nbsp;each&nbsp;pool&nbsp;target&nbsp;*/</span>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_replicas_remove</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_MEMBERSHIP</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">256</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr&nbsp;</span><span class="cpp_separator">{</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_MEMBERSHIP</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">257</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_doxygen_comment">/**&nbsp;rank&nbsp;of&nbsp;the&nbsp;node&nbsp;where&nbsp;the&nbsp;target&nbsp;resides&nbsp;*/</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">258</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;d_rank_t&nbsp;&nbsp;&nbsp;&nbsp;pta_rank</span><span class="cpp_separator">;</span>
+<td class="code"><span class="cpp_doxygen_comment">/**&nbsp;Target&nbsp;address&nbsp;for&nbsp;each&nbsp;pool&nbsp;target&nbsp;*/</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">259</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_doxygen_comment">/**&nbsp;target&nbsp;index&nbsp;in&nbsp;each&nbsp;node&nbsp;*/</span>
+<td class="code"><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr&nbsp;</span><span class="cpp_separator">{</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">260</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;uint32_t&nbsp;&nbsp;&nbsp;&nbsp;pta_target</span><span class="cpp_separator">;</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_doxygen_comment">/**&nbsp;rank&nbsp;of&nbsp;the&nbsp;node&nbsp;where&nbsp;the&nbsp;target&nbsp;resides&nbsp;*/</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">261</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_separator">};</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;d_rank_t&nbsp;&nbsp;&nbsp;&nbsp;pta_rank</span><span class="cpp_separator">;</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">262</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_doxygen_comment">/**&nbsp;target&nbsp;index&nbsp;in&nbsp;each&nbsp;node&nbsp;*/</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">263</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr_list&nbsp;</span><span class="cpp_separator">{</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;uint32_t&nbsp;&nbsp;&nbsp;&nbsp;pta_target</span><span class="cpp_separator">;</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">264</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pta_number</span><span class="cpp_separator">;</span>
+<td class="code"><span class="cpp_separator">};</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">265</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">pta_addrs</span><span class="cpp_separator">;</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">266</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_separator">};</span>
+<td class="code"><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr_list&nbsp;</span><span class="cpp_separator">{</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">267</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pta_number</span><span class="cpp_separator">;</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">268</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">pta_addrs</span><span class="cpp_separator">;</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">269</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pti_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_separator">};</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">270</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pti_addr_list</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;CRT_ARRAY</span><span class="cpp_separator">)</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">271</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">272</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pti_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">273</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_out</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pto_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pti_addr_list</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;CRT_ARRAY</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">274</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pto_addr_list</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;CRT_ARRAY</span><span class="cpp_separator">)</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">275</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">276</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_tgt_update</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_out</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pto_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">277</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pto_addr_list</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;CRT_ARRAY</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">278</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_add</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">,</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">279</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_tgt_update</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">280</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_exclude</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">281</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_add</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">282</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_exclude_out</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">283</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_exclude</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">284</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">285</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_EVICT&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_exclude_out</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">286</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pvi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
@@ -1842,13 +1842,13 @@
 <tr class="kwnone">
 <td class="line">288</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_EVICT&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_EVICT&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">289</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_out</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pvo_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pvi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
@@ -1860,25 +1860,25 @@
 <tr class="kwnone">
 <td class="line">291</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_evict</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_EVICT</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_EVICT</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_EVICT&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">292</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_out</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pvo_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">293</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_SVC_STOP&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">294</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">psi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_evict</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_EVICT</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_EVICT</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
@@ -1890,13 +1890,13 @@
 <tr class="kwnone">
 <td class="line">296</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_SVC_STOP&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_SVC_STOP&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">297</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_out</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pso_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">psi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
@@ -1908,109 +1908,109 @@
 <tr class="kwnone">
 <td class="line">299</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_svc_stop</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_SVC_STOP</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_SVC_STOP</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_SVC_STOP&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">300</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_out</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pso_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">301</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_CONNECT&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">302</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_uuid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_svc_stop</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_SVC_STOP</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_SVC_STOP</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">303</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_hdl</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">304</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_capas</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_CONNECT&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">305</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_map_version</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_uuid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">306</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_iv_ns_id</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_hdl</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">307</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_master_rank</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_capas</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">308</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_pad</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_map_version</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">309</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">daos_iov_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_iv_ctxt</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_iv_ns_id</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">310</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_master_rank</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">311</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_TGT_CONNECT&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_pad</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">312</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;daos_pool_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tco_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">daos_iov_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_iv_ctxt</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">313</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">int32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tco_rc</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">314</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_TGT_CONNECT&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">315</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_tgt_connect</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_CONNECT</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;daos_pool_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tco_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">316</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_CONNECT</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">int32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tco_rc</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
@@ -2022,37 +2022,37 @@
 <tr class="kwnone">
 <td class="line">318</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_DISCONNECT&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_tgt_connect</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_CONNECT</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">319</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tdi_uuid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_CONNECT</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">320</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tdi_hdls</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_ARRAY</span><span class="cpp_separator">)</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">321</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_DISCONNECT&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">322</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_TGT_DISCONNECT&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tdi_uuid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">323</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">int32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tdo_rc</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tdi_hdls</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_ARRAY</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
@@ -2064,13 +2064,13 @@
 <tr class="kwnone">
 <td class="line">325</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_tgt_disconnect</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_DISCONNECT</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_TGT_DISCONNECT&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">326</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_DISCONNECT</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">int32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tdo_rc</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
@@ -2082,13 +2082,13 @@
 <tr class="kwnone">
 <td class="line">328</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_QUERY&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_tgt_disconnect</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_DISCONNECT</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">329</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tqi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_DISCONNECT</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
@@ -2100,37 +2100,37 @@
 <tr class="kwnone">
 <td class="line">331</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_TGT_QUERY&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_QUERY&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">332</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;daos_pool_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tqo_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tqi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">333</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tqo_rc</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">334</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_TGT_QUERY&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">335</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_tgt_query</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_QUERY</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;daos_pool_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tqo_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">336</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_QUERY</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tqo_rc</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
@@ -2142,37 +2142,37 @@
 <tr class="kwnone">
 <td class="line">338</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE_MAP&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_tgt_query</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_QUERY</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">339</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tui_uuid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_QUERY</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">340</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tui_map_version</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">341</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE_MAP&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">342</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE_MAP&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tui_uuid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">343</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">int32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tuo_rc</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tui_map_version</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
@@ -2184,13 +2184,13 @@
 <tr class="kwnone">
 <td class="line">345</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_tgt_update_map</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE_MAP</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE_MAP&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;\</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">346</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE_MAP</span><span class="cpp_separator">)</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">int32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tuo_rc</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
@@ -2202,73 +2202,73 @@
 <tr class="kwnone">
 <td class="line">348</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">inline</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_tgt_update_map</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE_MAP</span><span class="cpp_separator">,</span>
 </td>
 </tr>
-<tr class="covered">
-<td class="line">349<a name='349'/></td>
-<td class="line"><img src='../images/check_icon.png'></td>
-<td class="code"><span class="cpp_plain">pool_req_create</span><span class="cpp_separator">(</span><span class="cpp_plain">crt_context_t&nbsp;crt_ctx</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;crt_endpoint_t&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">tgt_ep</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;crt_opcode_t&nbsp;opc</span><span class="cpp_separator">,</span>
+<tr class="kwnone">
+<td class="line">349</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE_MAP</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">350</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;crt_rpc_t&nbsp;</span><span class="cpp_operator">**</span><span class="cpp_plain">req</span><span class="cpp_separator">)</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">351</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_separator">{</span>
+<td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">inline</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
 </td>
 </tr>
-<tr class="kwnone">
-<td class="line">352</td>
-<td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;crt_opcode_t&nbsp;opcode</span><span class="cpp_separator">;</span>
+<tr class="covered">
+<td class="line">352<a name='352'/></td>
+<td class="line"><img src='../images/check_icon.png'></td>
+<td class="code"><span class="cpp_plain">pool_req_create</span><span class="cpp_separator">(</span><span class="cpp_plain">crt_context_t&nbsp;crt_ctx</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;crt_endpoint_t&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">tgt_ep</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;crt_opcode_t&nbsp;opc</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">353</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;crt_rpc_t&nbsp;</span><span class="cpp_operator">**</span><span class="cpp_plain">req</span><span class="cpp_separator">)</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">354</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;opcode&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;DAOS_RPC_OPCODE</span><span class="cpp_separator">(</span><span class="cpp_plain">opc</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_POOL_MODULE</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_POOL_VERSION</span><span class="cpp_separator">);</span>
+<td class="code"><span class="cpp_separator">{</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">355</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;call&nbsp;daos_rpc_tag&nbsp;to&nbsp;get&nbsp;the&nbsp;target&nbsp;tag/context&nbsp;idx&nbsp;*/</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;crt_opcode_t&nbsp;opcode</span><span class="cpp_separator">;</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">356</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;tgt_ep</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">ep_tag&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;daos_rpc_tag</span><span class="cpp_separator">(</span><span class="cpp_plain">DAOS_REQ_POOL</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;tgt_ep</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">ep_tag</span><span class="cpp_separator">);</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">357</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;opcode&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;DAOS_RPC_OPCODE</span><span class="cpp_separator">(</span><span class="cpp_plain">opc</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_POOL_MODULE</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_POOL_VERSION</span><span class="cpp_separator">);</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">358</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;crt_req_create</span><span class="cpp_separator">(</span><span class="cpp_plain">crt_ctx</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;tgt_ep</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;opcode</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;req</span><span class="cpp_separator">);</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;call&nbsp;daos_rpc_tag&nbsp;to&nbsp;get&nbsp;the&nbsp;target&nbsp;tag/context&nbsp;idx&nbsp;*/</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">359</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_separator">}</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;tgt_ep</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">ep_tag&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;daos_rpc_tag</span><span class="cpp_separator">(</span><span class="cpp_plain">DAOS_REQ_POOL</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;tgt_ep</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">ep_tag</span><span class="cpp_separator">);</span>
 </td>
 </tr>
 <tr class="kwnone">
@@ -2280,19 +2280,19 @@
 <tr class="kwnone">
 <td class="line">361</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_type">int</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;crt_req_create</span><span class="cpp_separator">(</span><span class="cpp_plain">crt_ctx</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;tgt_ep</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;opcode</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;req</span><span class="cpp_separator">);</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">362</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">pool_target_addr_list_alloc</span><span class="cpp_separator">(</span><span class="cpp_keyword">unsigned</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;num</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_separator">}</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">363</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr_list&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">list</span><span class="cpp_separator">);</span>
+<td class="code"></span>
 </td>
 </tr>
 <tr class="kwnone">
@@ -2304,35 +2304,53 @@
 <tr class="kwnone">
 <td class="line">365</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">pool_target_addr_list_append</span><span class="cpp_separator">(</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr_list&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">dst_list</span><span class="cpp_separator">,</span>
+<td class="code"><span class="cpp_plain">pool_target_addr_list_alloc</span><span class="cpp_separator">(</span><span class="cpp_keyword">unsigned</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;num</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">366</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">src</span><span class="cpp_separator">);</span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr_list&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">list</span><span class="cpp_separator">);</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">367</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_keyword">void</span>
+<td class="code"><span class="cpp_type">int</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">368</td>
 <td class="line"></td>
-<td class="code"><span class="cpp_plain">pool_target_addr_list_free</span><span class="cpp_separator">(</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr_list&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">list</span><span class="cpp_separator">);</span>
+<td class="code"><span class="cpp_plain">pool_target_addr_list_append</span><span class="cpp_separator">(</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr_list&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">dst_list</span><span class="cpp_separator">,</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">369</td>
 <td class="line"></td>
-<td class="code"></span>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">src</span><span class="cpp_separator">);</span>
 </td>
 </tr>
 <tr class="kwnone">
 <td class="line">370</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_keyword">void</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">371</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">pool_target_addr_list_free</span><span class="cpp_separator">(</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr_list&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">list</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">372</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">373</td>
 <td class="line"></td>
 <td class="code"><span class="cpp_preproc">#endif</span><span class="cpp_plain">&nbsp;</span><span class="cpp_comment">/*&nbsp;__POOL_RPC_H__&nbsp;*/</span>
 </td>
