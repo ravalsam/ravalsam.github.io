@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite name="Epoch recovery tests" time="0.715" tests="3" failures="0" errors="0" skipped="0" >
+    <testcase name="ERECOV1: container close discards uncommitted data" time="0.099" >
+    </testcase>
+    <testcase name="ERECOV2: pool disconnect discards uncommitted data" time="0.313" >
+    </testcase>
+    <testcase name="ERECOV3: pool evict discards uncommitted data" time="0.303" >
+    </testcase>
+  </testsuite>
+</testsuites>

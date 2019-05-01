@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite name="DAOS container tests" time="2.923" tests="6" failures="0" errors="0" skipped="0" >
+    <testcase name="CONT1: create/open/close/destroy container" time="0.077" >
+    </testcase>
+    <testcase name="CONT2: create/open/close/destroy container (async)" time="0.071" >
+    </testcase>
+    <testcase name="CONT3: container handle local2glocal and global2local" time="0.075" >
+    </testcase>
+    <testcase name="CONT4: set/get/list user-defined container attributes (sync)" time="0.005" >
+    </testcase>
+    <testcase name="CONT5: set/get/list user-defined container attributes (async)" time="0.007" >
+    </testcase>
+    <testcase name="CONT6: create container with properties and query" time="2.689" >
+    </testcase>
+  </testsuite>
+</testsuites>

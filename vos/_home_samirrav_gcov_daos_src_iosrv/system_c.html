@@ -1,0 +1,1202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<title>Coverage Report</title> 
+<link title="Style" type="text/css" rel="stylesheet" href="../css/main.css"/> 
+<link title="Style" type="text/css" rel="stylesheet" href="../css/highlight.css"/> 
+
+<link title="Style" type="text/css" rel="stylesheet" href="../css/sortabletable.css"/> 
+<script type="text/javascript" src="../js/popup.js"></script> 
+<script type="text/javascript" src="../js/sortabletable.js"></script> 
+<script type="text/javascript" src="../js/customsorttypes.js"></script> 
+</head> 
+<body>
+<h5>Coverage Report - /home/samirrav/gcov_daos/src/iosrv/system.c <a href="../_home_samirrav_gcov_daos_src_iosrv.html"><img src='../images/upper.png' border="0"/></a></h5> 
+<br>
+<div class="separator">&nbsp;</div> 
+<table class="report" id="fileList"> 
+	<thead>
+		<tr>
+			<td class="heading" width="50%">File</td>  
+			<td class="heading" width="10%">#Function</td>  
+			<td class="heading"  width="20%">
+				<a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">
+					Function Coverage
+				</a>
+			</td>
+			<td class="heading"  width="20%">
+				<a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">
+					Branch Coverage
+				</a>
+			</td>
+		</tr>
+	</thead> 
+	
+	
+	<tbody> 
+	<tr>
+			<td><a href='../_home_samirrav_gcov_daos_src_iosrv/system_c.html'>/home/samirrav/gcov_daos/src/iosrv/system.c</a></td>
+			<td class='value'>3</td>
+			<td><table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+					<tr class='percentgraph'>
+						<td align='right' class='percentgraph' width='40'>0.0%</td>
+						<td class='percentgraph'>
+							<div class='percentgraph'>
+								<div class='greenbar' style='width:0px'>
+									<span class='text'>0/3</span>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+					<tr class='percentgraph'>
+						<td align='right' class='percentgraph' width='40'>0.0%</td>
+						<td class='percentgraph'>
+							<div class='percentgraph'>
+								<div class='greenbar' style='width:0px'>
+									<span class='text'>0/26</span>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</tbody> 
+</table> 
+
+<div class="separator">&nbsp;</div> 
+<table class="report" id="currentDir"> 
+	<thead>
+		<tr>
+			<td class="heading" width="50%">Functions</td>  
+			<td class="heading" width="25%">Function Covered</td>  
+			<td class="heading"  width="25%">
+				<a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">
+					Branch Coverage
+				</a>
+			</td>
+		</tr>
+	</thead> 
+	<tbody> 
+			<tr>
+					<td><a href='#44'>create_tag_uri(const char*,int)</a></td>
+					<td>
+							Not Covered
+					</td>
+					<td>
+						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+							<tr class='percentgraph'>
+								<td align='right' class='percentgraph' width='40'>0.0%</td>
+								<td class='percentgraph'>
+									<div class='percentgraph'>
+										<div class='greenbar' style='width:0.0px'>
+											<span class='text'>0/4</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+		<tr>
+					<td><a href='#73'>add_server(crt_group_t*,d_rank_t,char*,int)</a></td>
+					<td>
+							Not Covered
+					</td>
+					<td>
+						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+							<tr class='percentgraph'>
+								<td align='right' class='percentgraph' width='40'>0.0%</td>
+								<td class='percentgraph'>
+									<div class='percentgraph'>
+										<div class='greenbar' style='width:0.0px'>
+											<span class='text'>0/4</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+		<tr>
+					<td><a href='#95'>dss_sys_map_load(const char*,crt_group_id_t,d_rank_t,int)</a></td>
+					<td>
+							Not Covered
+					</td>
+					<td>
+						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+							<tr class='percentgraph'>
+								<td align='right' class='percentgraph' width='40'>0.0%</td>
+								<td class='percentgraph'>
+									<div class='percentgraph'>
+										<div class='greenbar' style='width:0.0px'>
+											<span class='text'>0/18</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			
+	</tbody> 
+</table> 
+
+
+
+<div class="separator">&nbsp;</div> 
+<div style="overflow-x:scroll;">
+<table class="source">
+<colgroup>
+<col width="40"/>
+<col width="40"/>
+<col width=""/>
+</colgroup>
+<tr class="kwnone">
+<td class="line">1</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_comment">/*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">2</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;(C)&nbsp;Copyright&nbsp;2018&nbsp;Intel&nbsp;Corporation.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">3</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">4</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;Licensed&nbsp;under&nbsp;the&nbsp;Apache&nbsp;License,&nbsp;Version&nbsp;2.0&nbsp;(the&nbsp;&quot;License&quot;);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">5</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;you&nbsp;may&nbsp;not&nbsp;use&nbsp;this&nbsp;file&nbsp;except&nbsp;in&nbsp;compliance&nbsp;with&nbsp;the&nbsp;License.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">6</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;You&nbsp;may&nbsp;obtain&nbsp;a&nbsp;copy&nbsp;of&nbsp;the&nbsp;License&nbsp;at</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">7</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">8</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;http://www.apache.org/licenses/LICENSE-2.0</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">9</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">10</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;Unless&nbsp;required&nbsp;by&nbsp;applicable&nbsp;law&nbsp;or&nbsp;agreed&nbsp;to&nbsp;in&nbsp;writing,&nbsp;software</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">11</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;distributed&nbsp;under&nbsp;the&nbsp;License&nbsp;is&nbsp;distributed&nbsp;on&nbsp;an&nbsp;&quot;AS&nbsp;IS&quot;&nbsp;BASIS,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">12</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;WITHOUT&nbsp;WARRANTIES&nbsp;OR&nbsp;CONDITIONS&nbsp;OF&nbsp;ANY&nbsp;KIND,&nbsp;either&nbsp;express&nbsp;or&nbsp;implied.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">13</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;See&nbsp;the&nbsp;License&nbsp;for&nbsp;the&nbsp;specific&nbsp;language&nbsp;governing&nbsp;permissions&nbsp;and</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">14</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;limitations&nbsp;under&nbsp;the&nbsp;License.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">15</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">16</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;GOVERNMENT&nbsp;LICENSE&nbsp;RIGHTS-OPEN&nbsp;SOURCE&nbsp;SOFTWARE</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">17</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;The&nbsp;Government's&nbsp;rights&nbsp;to&nbsp;use,&nbsp;modify,&nbsp;reproduce,&nbsp;release,&nbsp;perform,&nbsp;display,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">18</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;or&nbsp;disclose&nbsp;this&nbsp;software&nbsp;are&nbsp;subject&nbsp;to&nbsp;the&nbsp;terms&nbsp;of&nbsp;the&nbsp;Apache&nbsp;License&nbsp;as</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">19</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;provided&nbsp;in&nbsp;Contract&nbsp;No.&nbsp;B609815.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">20</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;Any&nbsp;reproduction&nbsp;of&nbsp;computer&nbsp;software,&nbsp;computer&nbsp;software&nbsp;documentation,&nbsp;or</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">21</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;portions&nbsp;thereof&nbsp;marked&nbsp;with&nbsp;this&nbsp;legend&nbsp;must&nbsp;also&nbsp;reproduce&nbsp;the&nbsp;markings.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">22</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_comment">&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">23</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">/**</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">24</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;\file</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">25</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">26</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;System&nbsp;functionalities</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">27</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">28</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">29</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;D_LOGFAC&nbsp;DD_FAC</span><span class="cpp_separator">(</span><span class="cpp_plain">server</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">30</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">31</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;srv_internal.h&quot;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">32</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">33</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;GROUP_ID_MAX_LEN&nbsp;</span><span class="cpp_literal">64</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">34</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;ADDR_STR_MAX_LEN&nbsp;</span><span class="cpp_literal">128</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">35</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">36</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;_S</span><span class="cpp_separator">(</span><span class="cpp_plain">m</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;#m</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">37</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;S</span><span class="cpp_separator">(</span><span class="cpp_plain">m</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;_S</span><span class="cpp_separator">(</span><span class="cpp_plain">m</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">38</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">39</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_comment">/*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">40</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;Return&nbsp;a&nbsp;URI&nbsp;string,&nbsp;like&nbsp;&quot;ofi+sockets://192.168.1.70:44821&quot;,&nbsp;that&nbsp;callers</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">41</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;are&nbsp;responsible&nbsp;for&nbsp;freeing&nbsp;with&nbsp;D_FREE.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">42</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_comment">&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">43</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">char</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">*</span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">44<a name='44'/></td>
+<td class="line"><img src='../images/uncheck_icon.png'></td>
+<td class="code"><span class="cpp_plain">create_tag_uri</span><span class="cpp_separator">(</span><span class="cpp_keyword">const</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">char</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">base_uri</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;i</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">45</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">46</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">char</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">uri</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">47</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">char</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">p</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">48</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;port</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">49</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">50</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;Locate&nbsp;the&nbsp;&quot;:&quot;&nbsp;between&nbsp;the&nbsp;host&nbsp;and&nbsp;the&nbsp;port.&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">51</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;p&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;strrchr</span><span class="cpp_separator">(</span><span class="cpp_plain">base_uri</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">':'</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">52</td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">p&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">53</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">54</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">55</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">56</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Allocate&nbsp;the&nbsp;tag&nbsp;URI&nbsp;buffer&nbsp;and&nbsp;copy&nbsp;base_uri&nbsp;in&nbsp;except&nbsp;for&nbsp;the</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">57</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;port.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">58</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">59</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;D_ALLOC</span><span class="cpp_separator">(</span><span class="cpp_plain">uri</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;ADDR_STR_MAX_LEN&nbsp;</span><span class="cpp_operator">+</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">1</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">60</td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">uri&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">61</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">62</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;strncpy</span><span class="cpp_separator">(</span><span class="cpp_plain">uri</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;base_uri</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;p&nbsp;</span><span class="cpp_operator">+</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">1</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">&nbsp;base_uri</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">63</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">64</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;Print&nbsp;the&nbsp;port&nbsp;into&nbsp;the&nbsp;tag&nbsp;URI&nbsp;buffer.&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">65</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;port&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;atoi</span><span class="cpp_separator">(</span><span class="cpp_plain">p&nbsp;</span><span class="cpp_operator">+</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">1</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">+</span><span class="cpp_plain">&nbsp;i</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">66</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;D_ASSERT</span><span class="cpp_separator">(</span><span class="cpp_plain">port&nbsp;</span><span class="cpp_operator">&lt;=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">65535</span><span class="cpp_plain">&nbsp;</span><span class="cpp_comment">/*&nbsp;maximal&nbsp;port&nbsp;number&nbsp;*/</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">67</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;sprintf</span><span class="cpp_separator">(</span><span class="cpp_plain">uri&nbsp;</span><span class="cpp_operator">+</span><span class="cpp_plain">&nbsp;strlen</span><span class="cpp_separator">(</span><span class="cpp_plain">uri</span><span class="cpp_separator">),</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;%d&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;port</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">68</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">69</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;uri</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">70</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">71</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">72</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">73<a name='73'/></td>
+<td class="line"><img src='../images/uncheck_icon.png'></td>
+<td class="code"><span class="cpp_plain">add_server</span><span class="cpp_separator">(</span><span class="cpp_plain">crt_group_t&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">group</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;d_rank_t&nbsp;rank</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">char</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">uri</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;ntags</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">74</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">75</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;crt_node_info_t&nbsp;info</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">76</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">77</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">78</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">79</td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">for</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">i&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">;</span><span class="cpp_plain">&nbsp;i&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">&nbsp;ntags</span><span class="cpp_separator">;</span><span class="cpp_plain">&nbsp;i</span><span class="cpp_operator">++</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">80</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;info</span><span class="cpp_separator">.</span><span class="cpp_plain">uri&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;create_tag_uri</span><span class="cpp_separator">(</span><span class="cpp_plain">uri</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;i</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">81</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;crt_group_node_add</span><span class="cpp_separator">(</span><span class="cpp_plain">group</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;rank</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;i</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;info</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">82</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_FREE</span><span class="cpp_separator">(</span><span class="cpp_plain">info</span><span class="cpp_separator">.</span><span class="cpp_plain">uri</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">83</td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">84</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_ERROR</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;failed&nbsp;to&nbsp;add&nbsp;node:&nbsp;rank=%u&nbsp;tag=%d&nbsp;uri=%s\n&quot;</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">85</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rank</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;i</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;info</span><span class="cpp_separator">.</span><span class="cpp_plain">uri</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">86</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">87</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">88</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">89</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">90</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">91</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">92</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">93</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_comment">/*&nbsp;This&nbsp;function&nbsp;doesn't&nbsp;try&nbsp;to&nbsp;restore&nbsp;the&nbsp;primary&nbsp;group&nbsp;state&nbsp;upon&nbsp;errors.&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">94</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_type">int</span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">95<a name='95'/></td>
+<td class="line"><img src='../images/uncheck_icon.png'></td>
+<td class="code"><span class="cpp_plain">dss_sys_map_load</span><span class="cpp_separator">(</span><span class="cpp_keyword">const</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">char</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">path</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;crt_group_id_t&nbsp;grpid</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;d_rank_t&nbsp;self</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">96</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;ntags</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">97</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">98</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;crt_group_t&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">group</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">99</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;FILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">file</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">100</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">char</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</span><span class="cpp_separator">[</span><span class="cpp_plain">GROUP_ID_MAX_LEN&nbsp;</span><span class="cpp_operator">+</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">1</span><span class="cpp_separator">];</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">101</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;size</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">102</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">char</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all_or_self</span><span class="cpp_separator">[</span><span class="cpp_literal">5</span><span class="cpp_separator">];</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">103</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">104</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">105</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">106</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;group&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;crt_group_lookup</span><span class="cpp_separator">(</span><span class="cpp_plain">NULL&nbsp;</span><span class="cpp_comment">/*&nbsp;primary&nbsp;group&nbsp;*/</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">107</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;D_ASSERT</span><span class="cpp_separator">(</span><span class="cpp_plain">group&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">108</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">109</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;file&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;fopen</span><span class="cpp_separator">(</span><span class="cpp_plain">path</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;r&quot;</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">110</td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">file&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">111</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;daos_errno2der</span><span class="cpp_separator">(</span><span class="cpp_plain">errno</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">112</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_ERROR</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;%s:&nbsp;%s\n&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;path</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;strerror</span><span class="cpp_separator">(</span><span class="cpp_plain">errno</span><span class="cpp_separator">));</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">113</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;out</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">114</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">115</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">116</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;&quot;name&nbsp;daos_server&quot;&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">117</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;fscanf</span><span class="cpp_separator">(</span><span class="cpp_plain">file</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;%*s&nbsp;%&quot;</span><span class="cpp_plain">S</span><span class="cpp_separator">(</span><span class="cpp_plain">GROUP_ID_MAX_LEN</span><span class="cpp_separator">)</span><span class="cpp_literal">&quot;s&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;name</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">118</td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;EOF</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">119</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_INVAL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">120</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;out_file</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">121</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">122</td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">strcmp</span><span class="cpp_separator">(</span><span class="cpp_plain">name</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;grpid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">123</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_ERROR</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;invalid&nbsp;group&nbsp;name:&nbsp;%s&nbsp;!=&nbsp;%s\n&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;name</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;grpid</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">124</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_INVAL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">125</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">126</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">127</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;&quot;size&nbsp;2&quot;&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">128</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;fscanf</span><span class="cpp_separator">(</span><span class="cpp_plain">file</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;%*s&nbsp;%d&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">size</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">129</td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;EOF</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">130</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_INVAL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">131</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;out_file</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">132</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">133</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">134</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;&quot;all&quot;&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">135</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;fscanf</span><span class="cpp_separator">(</span><span class="cpp_plain">file</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;%4s&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;all_or_self</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">136</td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;EOF</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">137</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_INVAL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">138</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;out_file</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">139</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">140</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">141</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">142</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&quot;0&nbsp;ofi+sockets://10.7.1.70:31416&quot;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">143</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&quot;1&nbsp;ofi+sockets://10.7.1.71:31416&quot;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">144</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;...</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">145</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">146</td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">for</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">i&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">;</span><span class="cpp_plain">&nbsp;i&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">&nbsp;size</span><span class="cpp_separator">;</span><span class="cpp_plain">&nbsp;i</span><span class="cpp_operator">++</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">147</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d_rank_t&nbsp;&nbsp;&nbsp;&nbsp;rank</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">148</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">char</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uri</span><span class="cpp_separator">[</span><span class="cpp_plain">ADDR_STR_MAX_LEN&nbsp;</span><span class="cpp_operator">+</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">1</span><span class="cpp_separator">];</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">149</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">150</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;fscanf</span><span class="cpp_separator">(</span><span class="cpp_plain">file</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;%d&nbsp;%&quot;</span><span class="cpp_plain">S</span><span class="cpp_separator">(</span><span class="cpp_plain">ADDR_STR_MAX_LEN</span><span class="cpp_separator">)</span><span class="cpp_literal">&quot;s&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">rank</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;uri</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">151</td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;EOF</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">152</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_INVAL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">153</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;out_file</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">154</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">155</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">156</td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rank&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;self</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">157</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">158</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">continue</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">159</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">160</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">161</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;add_server</span><span class="cpp_separator">(</span><span class="cpp_plain">group</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;rank</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;uri</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;ntags</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">162</td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">163</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_ERROR</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;failed&nbsp;to&nbsp;add&nbsp;server&nbsp;%u&nbsp;%s:&nbsp;%d\n&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;rank</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;uri</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">164</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">165</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;out_file</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">166</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">167</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">168</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">169</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">out_file</span><span class="cpp_operator">:</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">170</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;fclose</span><span class="cpp_separator">(</span><span class="cpp_plain">file</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">171</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">out</span><span class="cpp_operator">:</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">172</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">173</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">}</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="footer">Report generated by <a href="http://bullshtml.googlecode.com" target="_top">Bullseye Html Reporter</a> </div> 
+</body> 
+</html>

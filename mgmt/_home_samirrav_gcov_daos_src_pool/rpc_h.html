@@ -1,0 +1,2362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<title>Coverage Report</title> 
+<link title="Style" type="text/css" rel="stylesheet" href="../css/main.css"/> 
+<link title="Style" type="text/css" rel="stylesheet" href="../css/highlight.css"/> 
+
+<link title="Style" type="text/css" rel="stylesheet" href="../css/sortabletable.css"/> 
+<script type="text/javascript" src="../js/popup.js"></script> 
+<script type="text/javascript" src="../js/sortabletable.js"></script> 
+<script type="text/javascript" src="../js/customsorttypes.js"></script> 
+</head> 
+<body>
+<h5>Coverage Report - /home/samirrav/gcov_daos/src/pool/rpc.h <a href="../_home_samirrav_gcov_daos_src_pool.html"><img src='../images/upper.png' border="0"/></a></h5> 
+<br>
+<div class="separator">&nbsp;</div> 
+<table class="report" id="fileList"> 
+	<thead>
+		<tr>
+			<td class="heading" width="50%">File</td>  
+			<td class="heading" width="10%">#Function</td>  
+			<td class="heading"  width="20%">
+				<a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">
+					Function Coverage
+				</a>
+			</td>
+			<td class="heading"  width="20%">
+				<a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">
+					Branch Coverage
+				</a>
+			</td>
+		</tr>
+	</thead> 
+	
+	
+	<tbody> 
+	<tr>
+			<td><a href='../_home_samirrav_gcov_daos_src_pool/rpc_h.html'>/home/samirrav/gcov_daos/src/pool/rpc.h</a></td>
+			<td class='value'>1</td>
+			<td><table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+					<tr class='percentgraph'>
+						<td align='right' class='percentgraph' width='40'>100.0%</td>
+						<td class='percentgraph'>
+							<div class='percentgraph'>
+								<div class='greenbar' style='width:100px'>
+									<span class='text'>1/1</span>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+					<tr class='percentgraph'>
+						<td align='right' class='percentgraph' width='40'>N/A%</td>
+						<td class='percentgraph'>
+							<div class='percentgraph'>
+								<div class='na' style='width:100px'>
+									<span class='text'>0/0</span>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</tbody> 
+</table> 
+
+<div class="separator">&nbsp;</div> 
+<table class="report" id="currentDir"> 
+	<thead>
+		<tr>
+			<td class="heading" width="50%">Functions</td>  
+			<td class="heading" width="25%">Function Covered</td>  
+			<td class="heading"  width="25%">
+				<a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">
+					Branch Coverage
+				</a>
+			</td>
+		</tr>
+	</thead> 
+	<tbody> 
+			<tr>
+					<td><a href='#352'>pool_req_create(crt_context_t,crt_endpoint_t*,crt_opcode_t,crt_rpc_t**)</a></td>
+					<td>
+							Covered
+					</td>
+					<td>
+						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+							<tr class='percentgraph'>
+								<td align='right' class='percentgraph' width='40'>N/A%</td>
+								<td class='percentgraph'>
+									<div class='percentgraph'>
+										<div class='na' style='width:100px'>
+											<span class='text'>0/0</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			
+	</tbody> 
+</table> 
+
+
+
+<div class="separator">&nbsp;</div> 
+<div style="overflow-x:scroll;">
+<table class="source">
+<colgroup>
+<col width="40"/>
+<col width="40"/>
+<col width=""/>
+</colgroup>
+<tr class="kwnone">
+<td class="line">1</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">/**</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">2</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;(C)&nbsp;Copyright&nbsp;2016-2019&nbsp;Intel&nbsp;Corporation.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">3</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">4</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;Licensed&nbsp;under&nbsp;the&nbsp;Apache&nbsp;License,&nbsp;Version&nbsp;2.0&nbsp;(the&nbsp;&quot;License&quot;);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">5</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;you&nbsp;may&nbsp;not&nbsp;use&nbsp;this&nbsp;file&nbsp;except&nbsp;in&nbsp;compliance&nbsp;with&nbsp;the&nbsp;License.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">6</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;You&nbsp;may&nbsp;obtain&nbsp;a&nbsp;copy&nbsp;of&nbsp;the&nbsp;License&nbsp;at</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">7</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">8</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;http://www.apache.org/licenses/LICENSE-2.0</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">9</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">10</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;Unless&nbsp;required&nbsp;by&nbsp;applicable&nbsp;law&nbsp;or&nbsp;agreed&nbsp;to&nbsp;in&nbsp;writing,&nbsp;software</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">11</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;distributed&nbsp;under&nbsp;the&nbsp;License&nbsp;is&nbsp;distributed&nbsp;on&nbsp;an&nbsp;&quot;AS&nbsp;IS&quot;&nbsp;BASIS,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">12</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;WITHOUT&nbsp;WARRANTIES&nbsp;OR&nbsp;CONDITIONS&nbsp;OF&nbsp;ANY&nbsp;KIND,&nbsp;either&nbsp;express&nbsp;or&nbsp;implied.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">13</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;See&nbsp;the&nbsp;License&nbsp;for&nbsp;the&nbsp;specific&nbsp;language&nbsp;governing&nbsp;permissions&nbsp;and</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">14</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;limitations&nbsp;under&nbsp;the&nbsp;License.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">15</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">16</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;GOVERNMENT&nbsp;LICENSE&nbsp;RIGHTS-OPEN&nbsp;SOURCE&nbsp;SOFTWARE</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">17</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;The&nbsp;Government's&nbsp;rights&nbsp;to&nbsp;use,&nbsp;modify,&nbsp;reproduce,&nbsp;release,&nbsp;perform,&nbsp;display,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">18</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;or&nbsp;disclose&nbsp;this&nbsp;software&nbsp;are&nbsp;subject&nbsp;to&nbsp;the&nbsp;terms&nbsp;of&nbsp;the&nbsp;Apache&nbsp;License&nbsp;as</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">19</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;provided&nbsp;in&nbsp;Contract&nbsp;No.&nbsp;B609815.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">20</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;Any&nbsp;reproduction&nbsp;of&nbsp;computer&nbsp;software,&nbsp;computer&nbsp;software&nbsp;documentation,&nbsp;or</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">21</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;portions&nbsp;thereof&nbsp;marked&nbsp;with&nbsp;this&nbsp;legend&nbsp;must&nbsp;also&nbsp;reproduce&nbsp;the&nbsp;markings.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">22</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">23</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">/**</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">24</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;dc_pool,&nbsp;ds_pool:&nbsp;RPC&nbsp;Protocol&nbsp;Definitions</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">25</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">26</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;This&nbsp;is&nbsp;naturally&nbsp;shared&nbsp;by&nbsp;both&nbsp;dc_pool&nbsp;and&nbsp;ds_pool.&nbsp;The&nbsp;in&nbsp;and&nbsp;out&nbsp;data</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">27</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;structures&nbsp;must&nbsp;be&nbsp;absent&nbsp;of&nbsp;any&nbsp;compiler-generated&nbsp;paddings.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">28</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">29</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">30</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#ifndef</span><span class="cpp_plain">&nbsp;__POOL_RPC_H__</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">31</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;__POOL_RPC_H__</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">32</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">33</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">stdint</span><span class="cpp_separator">.</span><span class="cpp_plain">h</span><span class="cpp_operator">&gt;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">34</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_keyword">uuid</span><span class="cpp_operator">/</span><span class="cpp_keyword">uuid</span><span class="cpp_separator">.</span><span class="cpp_plain">h</span><span class="cpp_operator">&gt;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">35</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">daos</span><span class="cpp_operator">/</span><span class="cpp_plain">rpc</span><span class="cpp_separator">.</span><span class="cpp_plain">h</span><span class="cpp_operator">&gt;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">36</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">daos</span><span class="cpp_operator">/</span><span class="cpp_plain">rsvc</span><span class="cpp_separator">.</span><span class="cpp_plain">h</span><span class="cpp_operator">&gt;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">37</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">38</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_comment">/*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">39</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;RPC&nbsp;operation&nbsp;codes</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">40</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">41</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;These&nbsp;are&nbsp;for&nbsp;daos_rpc::dr_opc&nbsp;and&nbsp;DAOS_RPC_OPCODE(opc,&nbsp;...)&nbsp;rather&nbsp;than</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">42</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;crt_req_create(...,&nbsp;opc,&nbsp;...).&nbsp;See&nbsp;src/include/daos/rpc.h.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">43</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_comment">&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">44</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_POOL_VERSION&nbsp;</span><span class="cpp_literal">1</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">45</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_comment">/*</span><span class="cpp_plain">&nbsp;LIST&nbsp;of&nbsp;internal&nbsp;RPCS&nbsp;in&nbsp;form&nbsp;of:</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">46</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;*&nbsp;OPCODE,&nbsp;flags,&nbsp;FMT,&nbsp;handler,&nbsp;corpc_hdlr,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">47</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_comment">&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">48</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;POOL_PROTO_CLI_RPC_LIST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">49</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">POOL_CREATE</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">50</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_type">CQF_pool_create</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">51</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ds_pool_create_handler</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">),</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">52</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">POOL_CONNECT</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">53</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_type">CQF_pool_connect</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">54</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ds_pool_connect_handler</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">),</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">55</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">POOL_DISCONNECT</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">56</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_type">CQF_pool_disconnect</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">57</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ds_pool_disconnect_handler</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">),</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">58</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">POOL_QUERY</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">59</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_type">CQF_pool_query</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">60</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ds_pool_query_handler</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">),</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">61</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">POOL_EXCLUDE</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">62</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_type">CQF_pool_exclude</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">63</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ds_pool_update_handler</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">),</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">64</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">POOL_EVICT</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">65</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_type">CQF_pool_evict</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">66</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ds_pool_evict_handler</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">),</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">67</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">POOL_ADD</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">68</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_type">CQF_pool_add</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">69</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ds_pool_update_handler</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">),</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">70</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">POOL_EXCLUDE_OUT</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">71</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_type">CQF_pool_exclude_out</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">72</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ds_pool_update_handler</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">),</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">73</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">POOL_SVC_STOP</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">74</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_type">CQF_pool_svc_stop</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">75</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ds_pool_svc_stop_handler</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">),</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">76</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">POOL_ATTR_LIST</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">77</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_type">CQF_pool_attr_list</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">78</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ds_pool_attr_list_handler</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">),</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">79</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">POOL_ATTR_GET</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">80</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_type">CQF_pool_attr_get</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">81</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ds_pool_attr_get_handler</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">),</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">82</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">POOL_ATTR_SET</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">83</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_type">CQF_pool_attr_set</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">84</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ds_pool_attr_set_handler</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">),</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">85</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">POOL_REPLICAS_ADD</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">86</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_type">CQF_pool_replicas_add</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">87</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ds_pool_replicas_update_handler</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">),</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">88</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">POOL_REPLICAS_REMOVE</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">89</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_type">CQF_pool_replicas_remove</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">90</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ds_pool_replicas_update_handler</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">91</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">92</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;POOL_PROTO_SRV_RPC_LIST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">93</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">POOL_TGT_CONNECT</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">94</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_type">CQF_pool_tgt_connect</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">95</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ds_pool_tgt_connect_handler</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">96</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">ds_pool_tgt_connect_co_ops</span><span class="cpp_separator">),</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">97</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">POOL_TGT_DISCONNECT</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">98</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_type">CQF_pool_tgt_disconnect</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">99</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ds_pool_tgt_disconnect_handler</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">100</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">ds_pool_tgt_disconnect_co_ops</span><span class="cpp_separator">),</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">101</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">POOL_TGT_UPDATE_MAP</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">102</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_type">CQF_pool_tgt_update_map</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">103</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ds_pool_tgt_update_map_handler</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">104</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">ds_pool_tgt_update_map_co_ops</span><span class="cpp_separator">),</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">105</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">POOL_TGT_QUERY</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">106</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_type">CQF_pool_tgt_query</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">107</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ds_pool_tgt_query_handler</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">108</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">ds_pool_tgt_query_co_ops</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">109</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">110</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_comment">/*&nbsp;Define&nbsp;for&nbsp;RPC&nbsp;enum&nbsp;population&nbsp;below&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">111</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;X</span><span class="cpp_separator">(</span><span class="cpp_plain">a</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;b</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;c</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;d</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;e</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;a</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">112</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">113</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_keyword">enum</span><span class="cpp_plain">&nbsp;pool_operation&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">114</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;POOL_PROTO_CLI_RPC_LIST</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">115</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;POOL_PROTO_CLI_COUNT</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">116</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;POOL_PROTO_CLI_LAST&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;POOL_PROTO_CLI_COUNT&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">1</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">117</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;POOL_PROTO_SRV_RPC_LIST</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">118</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">};</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">119</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">120</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#undef</span><span class="cpp_plain">&nbsp;X</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">121</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">122</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_keyword">extern</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;crt_proto_format&nbsp;pool_proto_fmt</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">123</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">124</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_OP&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">125</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pi_uuid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">126</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pi_hdl</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">127</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">128</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_OP&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">129</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">int32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">po_rc</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">130</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">po_map_version</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">131</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;rsvc_hint</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">po_hint</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">132</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">133</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_op</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_OP</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_OP</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">134</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">135</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_CREATE&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">136</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pri_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">137</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pri_uid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">138</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pri_gid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">139</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pri_mode</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">140</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pri_ntgts</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">141</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pri_tgt_uuids</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_ARRAY</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">142</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">d_rank_list_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pri_tgt_ranks</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_PTR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">143</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">daos_prop_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pri_prop</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_PTR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">144</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pri_ndomains</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">145</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pri_padding</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">146</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">int32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pri_domains</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_ARRAY</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">147</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">148</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_CREATE&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">149</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_out</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pro_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">150</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">151</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_create</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_CREATE</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_CREATE</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">152</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">153</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_CONNECT&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">154</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pci_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">155</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">daos_iov_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pci_cred</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">156</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pci_capas</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">157</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">crt_bulk_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pci_map_bulk</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">158</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">159</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_CONNECT&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">160</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_out</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pco_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">161</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pco_uid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">162</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pco_gid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">163</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pco_mode</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">164</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;only&nbsp;set&nbsp;on&nbsp;-DER_TRUNC&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">165</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pco_map_buf_size</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">166</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;daos_pool_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pco_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">167</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;daos_rebuild_status</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pco_rebuild_st</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">168</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">169</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_connect</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_CONNECT</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_CONNECT</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">170</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">171</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_DISCONNECT&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">172</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pdi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">173</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">174</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_DISCONNECT&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">175</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_out</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pdo_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">176</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">177</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_disconnect</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_DISCONNECT</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">178</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_DISCONNECT</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">179</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">180</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">/**&nbsp;pool&nbsp;query&nbsp;request&nbsp;bits&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">181</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_SPACE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">1ULL&nbsp;</span><span class="cpp_operator">&lt;&lt;</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">182</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_REBUILD_STATUS&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">1ULL&nbsp;</span><span class="cpp_operator">&lt;&lt;</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">1</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">183</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">184</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_LABEL&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">1ULL&nbsp;</span><span class="cpp_operator">&lt;&lt;</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">16</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">185</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_SPACE_RB&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">1ULL&nbsp;</span><span class="cpp_operator">&lt;&lt;</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">17</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">186</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_SELF_HEAL&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">1ULL&nbsp;</span><span class="cpp_operator">&lt;&lt;</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">18</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">187</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_RECLAIM&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">1ULL&nbsp;</span><span class="cpp_operator">&lt;&lt;</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">19</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">188</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_ACL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">1ULL&nbsp;</span><span class="cpp_operator">&lt;&lt;</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">20</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">189</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_OWNER&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">1ULL&nbsp;</span><span class="cpp_operator">&lt;&lt;</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">21</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">190</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_OWNER_GROUP&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">1ULL&nbsp;</span><span class="cpp_operator">&lt;&lt;</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">22</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">191</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">192</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_ALL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">193</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">DAOS_PO_QUERY_PROP_LABEL&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_SPACE_RB&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">194</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_PO_QUERY_PROP_SELF_HEAL&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_RECLAIM&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">195</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_PO_QUERY_PROP_ACL&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;DAOS_PO_QUERY_PROP_OWNER&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">196</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_PO_QUERY_PROP_OWNER_GROUP</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">197</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">198</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_QUERY&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">199</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">200</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">crt_bulk_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqi_map_bulk</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">201</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqi_query_bits</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">202</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">203</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_QUERY&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">204</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_out</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">205</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_uid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">206</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_gid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">207</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_mode</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">208</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;only&nbsp;set&nbsp;on&nbsp;-DER_TRUNC&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">209</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_map_buf_size</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">210</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">daos_prop_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_prop</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_PTR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">211</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;daos_pool_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">212</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;daos_rebuild_status</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pqo_rebuild_st</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">213</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">214</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_query</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_QUERY</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_QUERY</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">215</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">216</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_ATTR_LIST&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">217</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pali_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">218</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">crt_bulk_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pali_bulk</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">219</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">220</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_ATTR_LIST&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">221</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_out</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">palo_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">222</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">palo_size</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">223</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">224</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_attr_list</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_ATTR_LIST</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">225</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_ATTR_LIST</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">226</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">227</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_ATTR_GET&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">228</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pagi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">229</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pagi_count</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">230</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pagi_key_length</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">231</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">crt_bulk_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pagi_bulk</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">232</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">233</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_attr_get</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_ATTR_GET</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_OP</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">234</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">235</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_ATTR_SET&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">236</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pasi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">237</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pasi_count</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">238</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">crt_bulk_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pasi_bulk</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">239</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">240</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_attr_set</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_ATTR_SET</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_OP</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">241</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">242</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_MEMBERSHIP&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">243</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pmi_uuid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">244</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">d_rank_list_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pmi_targets</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_PTR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">245</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">246</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_MEMBERSHIP&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">247</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">int32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pmo_rc</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">248</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;rsvc_hint</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pmo_hint</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">249</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">d_rank_list_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pmo_failed</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_PTR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">250</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">251</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_membership</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_MEMBERSHIP</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">252</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_MEMBERSHIP</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">253</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_replicas_add</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_MEMBERSHIP</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">254</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_MEMBERSHIP</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">255</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_replicas_remove</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_MEMBERSHIP</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">256</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_MEMBERSHIP</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">257</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">258</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">/**&nbsp;Target&nbsp;address&nbsp;for&nbsp;each&nbsp;pool&nbsp;target&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">259</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">260</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_doxygen_comment">/**&nbsp;rank&nbsp;of&nbsp;the&nbsp;node&nbsp;where&nbsp;the&nbsp;target&nbsp;resides&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">261</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;d_rank_t&nbsp;&nbsp;&nbsp;&nbsp;pta_rank</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">262</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_doxygen_comment">/**&nbsp;target&nbsp;index&nbsp;in&nbsp;each&nbsp;node&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">263</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;uint32_t&nbsp;&nbsp;&nbsp;&nbsp;pta_target</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">264</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">};</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">265</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">266</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr_list&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">267</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pta_number</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">268</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">pta_addrs</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">269</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">};</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">270</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">271</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">272</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pti_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">273</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pti_addr_list</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;CRT_ARRAY</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">274</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">275</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">276</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_out</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pto_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">277</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pto_addr_list</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;CRT_ARRAY</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">278</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">279</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_tgt_update</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">280</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">281</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_add</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">282</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">283</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_exclude</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">284</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">285</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_exclude_out</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">286</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">287</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">288</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_EVICT&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">289</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pvi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">290</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">291</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_EVICT&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">292</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_out</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pvo_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">293</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">294</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_evict</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_EVICT</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_EVICT</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">295</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">296</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_SVC_STOP&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">297</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">psi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">298</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">299</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_SVC_STOP&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">300</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_out</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">pso_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">301</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">302</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_svc_stop</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_SVC_STOP</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_SVC_STOP</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">303</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">304</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_CONNECT&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">305</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_uuid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">306</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_hdl</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">307</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_capas</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">308</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_map_version</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">309</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_iv_ns_id</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">310</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_master_rank</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">311</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_pad</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">312</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">daos_iov_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tci_iv_ctxt</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">313</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">314</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_TGT_CONNECT&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">315</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;daos_pool_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tco_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">316</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">int32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tco_rc</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">317</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">318</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_tgt_connect</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_CONNECT</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">319</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_CONNECT</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">320</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">321</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_DISCONNECT&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">322</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tdi_uuid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">323</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tdi_hdls</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_ARRAY</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">324</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">325</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_TGT_DISCONNECT&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">326</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">int32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tdo_rc</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">327</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">328</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_tgt_disconnect</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_DISCONNECT</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">329</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_DISCONNECT</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">330</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">331</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_QUERY&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">332</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_op_in</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tqi_op</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">333</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">334</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_TGT_QUERY&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">335</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;daos_pool_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tqo_space</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">336</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tqo_rc</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">337</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">338</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_tgt_query</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_QUERY</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">339</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_QUERY</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">340</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">341</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE_MAP&nbsp;</span><span class="cpp_comment">/*&nbsp;input&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">342</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uuid_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tui_uuid</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">343</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">uint32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tui_map_version</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">344</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">345</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE_MAP&nbsp;</span><span class="cpp_comment">/*&nbsp;output&nbsp;fields&nbsp;*/</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">346</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">int32_t</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tuo_rc</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRT_VAR</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">347</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">348</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">CRT_RPC_DECLARE</span><span class="cpp_separator">(</span><span class="cpp_plain">pool_tgt_update_map</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_ISEQ_POOL_TGT_UPDATE_MAP</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">349</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_OSEQ_POOL_TGT_UPDATE_MAP</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">350</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">351</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">inline</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
+</td>
+</tr>
+<tr class="covered">
+<td class="line">352<a name='352'/></td>
+<td class="line"><img src='../images/check_icon.png'></td>
+<td class="code"><span class="cpp_plain">pool_req_create</span><span class="cpp_separator">(</span><span class="cpp_plain">crt_context_t&nbsp;crt_ctx</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;crt_endpoint_t&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">tgt_ep</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;crt_opcode_t&nbsp;opc</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">353</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;crt_rpc_t&nbsp;</span><span class="cpp_operator">**</span><span class="cpp_plain">req</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">354</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">355</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;crt_opcode_t&nbsp;opcode</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">356</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">357</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;opcode&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;DAOS_RPC_OPCODE</span><span class="cpp_separator">(</span><span class="cpp_plain">opc</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_POOL_MODULE</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_POOL_VERSION</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">358</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;call&nbsp;daos_rpc_tag&nbsp;to&nbsp;get&nbsp;the&nbsp;target&nbsp;tag/context&nbsp;idx&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">359</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;tgt_ep</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">ep_tag&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;daos_rpc_tag</span><span class="cpp_separator">(</span><span class="cpp_plain">DAOS_REQ_POOL</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;tgt_ep</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">ep_tag</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">360</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">361</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;crt_req_create</span><span class="cpp_separator">(</span><span class="cpp_plain">crt_ctx</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;tgt_ep</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;opcode</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;req</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">362</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">363</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">364</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_type">int</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">365</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">pool_target_addr_list_alloc</span><span class="cpp_separator">(</span><span class="cpp_keyword">unsigned</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;num</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">366</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr_list&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">list</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">367</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_type">int</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">368</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">pool_target_addr_list_append</span><span class="cpp_separator">(</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr_list&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">dst_list</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">369</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">src</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">370</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_keyword">void</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">371</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">pool_target_addr_list_free</span><span class="cpp_separator">(</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;pool_target_addr_list&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">list</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">372</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">373</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#endif</span><span class="cpp_plain">&nbsp;</span><span class="cpp_comment">/*&nbsp;__POOL_RPC_H__&nbsp;*/</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="footer">Report generated by <a href="http://bullshtml.googlecode.com" target="_top">Bullseye Html Reporter</a> </div> 
+</body> 
+</html>

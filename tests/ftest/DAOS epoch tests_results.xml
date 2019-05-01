@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite name="DAOS epoch tests" time="1.812" tests="5" failures="0" errors="0" skipped="0" >
+    <testcase name="EPOCH1: epoch_slip" time="0.305" >
+    </testcase>
+    <testcase name="EPOCH2: epoch_slip (async)" time="0.313" >
+    </testcase>
+    <testcase name="EPOCH3: epoch_slip (overlap)" time="0.283" >
+    </testcase>
+    <testcase name="EPOCH4: snapshots" time="0.504" >
+    </testcase>
+    <testcase name="EPOCH5: snapshots (async)" time="0.406" >
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<title>Coverage Report</title> 
+<link title="Style" type="text/css" rel="stylesheet" href="../css/main.css"/> 
+<link title="Style" type="text/css" rel="stylesheet" href="../css/highlight.css"/> 
+
+<link title="Style" type="text/css" rel="stylesheet" href="../css/sortabletable.css"/> 
+<script type="text/javascript" src="../js/popup.js"></script> 
+<script type="text/javascript" src="../js/sortabletable.js"></script> 
+<script type="text/javascript" src="../js/customsorttypes.js"></script> 
+</head> 
+<body>
+<h5>Coverage Report - /home/samirrav/gcov_daos/src/object/cli_mod.c <a href="../_home_samirrav_gcov_daos_src_object.html"><img src='../images/upper.png' border="0"/></a></h5> 
+<br>
+<div class="separator">&nbsp;</div> 
+<table class="report" id="fileList"> 
+	<thead>
+		<tr>
+			<td class="heading" width="50%">File</td>  
+			<td class="heading" width="10%">#Function</td>  
+			<td class="heading"  width="20%">
+				<a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">
+					Function Coverage
+				</a>
+			</td>
+			<td class="heading"  width="20%">
+				<a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">
+					Branch Coverage
+				</a>
+			</td>
+		</tr>
+	</thead> 
+	
+	
+	<tbody> 
+	<tr>
+			<td><a href='../_home_samirrav_gcov_daos_src_object/cli_mod_c.html'>/home/samirrav/gcov_daos/src/object/cli_mod.c</a></td>
+			<td class='value'>2</td>
+			<td><table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+					<tr class='percentgraph'>
+						<td align='right' class='percentgraph' width='40'>100.0%</td>
+						<td class='percentgraph'>
+							<div class='percentgraph'>
+								<div class='greenbar' style='width:100px'>
+									<span class='text'>2/2</span>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+					<tr class='percentgraph'>
+						<td align='right' class='percentgraph' width='40'>50.0%</td>
+						<td class='percentgraph'>
+							<div class='percentgraph'>
+								<div class='greenbar' style='width:50px'>
+									<span class='text'>3/6</span>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</tbody> 
+</table> 
+
+<div class="separator">&nbsp;</div> 
+<table class="report" id="currentDir"> 
+	<thead>
+		<tr>
+			<td class="heading" width="50%">Functions</td>  
+			<td class="heading" width="25%">Function Covered</td>  
+			<td class="heading"  width="25%">
+				<a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">
+					Branch Coverage
+				</a>
+			</td>
+		</tr>
+	</thead> 
+	<tbody> 
+			<tr>
+					<td><a href='#41'>dc_obj_init(void)</a></td>
+					<td>
+							Covered
+					</td>
+					<td>
+						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+							<tr class='percentgraph'>
+								<td align='right' class='percentgraph' width='40'>50.0%</td>
+								<td class='percentgraph'>
+									<div class='percentgraph'>
+										<div class='greenbar' style='width:50.0px'>
+											<span class='text'>3/6</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+		<tr>
+					<td><a href='#73'>dc_obj_fini(void)</a></td>
+					<td>
+							Covered
+					</td>
+					<td>
+						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+							<tr class='percentgraph'>
+								<td align='right' class='percentgraph' width='40'>N/A%</td>
+								<td class='percentgraph'>
+									<div class='percentgraph'>
+										<div class='na' style='width:100px'>
+											<span class='text'>0/0</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			
+	</tbody> 
+</table> 
+
+
+
+<div class="separator">&nbsp;</div> 
+<div style="overflow-x:scroll;">
+<table class="source">
+<colgroup>
+<col width="40"/>
+<col width="40"/>
+<col width=""/>
+</colgroup>
+<tr class="kwnone">
+<td class="line">1</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">/**</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">2</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;(C)&nbsp;Copyright&nbsp;2016&nbsp;Intel&nbsp;Corporation.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">3</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">4</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;Licensed&nbsp;under&nbsp;the&nbsp;Apache&nbsp;License,&nbsp;Version&nbsp;2.0&nbsp;(the&nbsp;&quot;License&quot;);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">5</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;you&nbsp;may&nbsp;not&nbsp;use&nbsp;this&nbsp;file&nbsp;except&nbsp;in&nbsp;compliance&nbsp;with&nbsp;the&nbsp;License.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">6</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;You&nbsp;may&nbsp;obtain&nbsp;a&nbsp;copy&nbsp;of&nbsp;the&nbsp;License&nbsp;at</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">7</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">8</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;http://www.apache.org/licenses/LICENSE-2.0</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">9</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">10</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;Unless&nbsp;required&nbsp;by&nbsp;applicable&nbsp;law&nbsp;or&nbsp;agreed&nbsp;to&nbsp;in&nbsp;writing,&nbsp;software</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">11</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;distributed&nbsp;under&nbsp;the&nbsp;License&nbsp;is&nbsp;distributed&nbsp;on&nbsp;an&nbsp;&quot;AS&nbsp;IS&quot;&nbsp;BASIS,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">12</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;WITHOUT&nbsp;WARRANTIES&nbsp;OR&nbsp;CONDITIONS&nbsp;OF&nbsp;ANY&nbsp;KIND,&nbsp;either&nbsp;express&nbsp;or&nbsp;implied.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">13</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;See&nbsp;the&nbsp;License&nbsp;for&nbsp;the&nbsp;specific&nbsp;language&nbsp;governing&nbsp;permissions&nbsp;and</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">14</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;limitations&nbsp;under&nbsp;the&nbsp;License.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">15</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">16</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;GOVERNMENT&nbsp;LICENSE&nbsp;RIGHTS-OPEN&nbsp;SOURCE&nbsp;SOFTWARE</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">17</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;The&nbsp;Government's&nbsp;rights&nbsp;to&nbsp;use,&nbsp;modify,&nbsp;reproduce,&nbsp;release,&nbsp;perform,&nbsp;display,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">18</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;or&nbsp;disclose&nbsp;this&nbsp;software&nbsp;are&nbsp;subject&nbsp;to&nbsp;the&nbsp;terms&nbsp;of&nbsp;the&nbsp;Apache&nbsp;License&nbsp;as</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">19</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;provided&nbsp;in&nbsp;Contract&nbsp;No.&nbsp;B609815.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">20</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;Any&nbsp;reproduction&nbsp;of&nbsp;computer&nbsp;software,&nbsp;computer&nbsp;software&nbsp;documentation,&nbsp;or</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">21</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;portions&nbsp;thereof&nbsp;marked&nbsp;with&nbsp;this&nbsp;legend&nbsp;must&nbsp;also&nbsp;reproduce&nbsp;the&nbsp;markings.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">22</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">23</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">/**</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">24</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;object&nbsp;client:&nbsp;Module&nbsp;Definitions</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">25</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">26</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;D_LOGFAC&nbsp;&nbsp;&nbsp;&nbsp;DD_FAC</span><span class="cpp_separator">(</span><span class="cpp_plain">object</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">27</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">28</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">pthread</span><span class="cpp_separator">.</span><span class="cpp_plain">h</span><span class="cpp_operator">&gt;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">29</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">daos</span><span class="cpp_operator">/</span><span class="cpp_plain">common</span><span class="cpp_separator">.</span><span class="cpp_plain">h</span><span class="cpp_operator">&gt;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">30</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">daos</span><span class="cpp_operator">/</span><span class="cpp_plain">rpc</span><span class="cpp_separator">.</span><span class="cpp_plain">h</span><span class="cpp_operator">&gt;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">31</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">daos_types</span><span class="cpp_separator">.</span><span class="cpp_plain">h</span><span class="cpp_operator">&gt;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">32</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;obj_rpc.h&quot;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">33</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;obj_internal.h&quot;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">34</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">35</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_type">bool</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;srv_io_dispatch&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">true</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">36</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">37</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">/**</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">38</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;Initialize&nbsp;object&nbsp;interface</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">39</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">40</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_type">int</span>
+</td>
+</tr>
+<tr class="covered">
+<td class="line">41<a name='41'/></td>
+<td class="line"><img src='../images/check_icon.png'></td>
+<td class="code"><span class="cpp_plain">dc_obj_init</span><span class="cpp_separator">(</span><span class="cpp_keyword">void</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">42</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">43</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;uint32_t&nbsp;&nbsp;&nbsp;&nbsp;mode&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;DIM_DTX_FULL_ENABLED</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">44</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">45</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">46</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;d_getenv_int</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;DAOS_IO_MODE&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">mode</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">47</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">mode&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;DIM_CLIENT_DISPATCH</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">48</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;srv_io_dispatch&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">false</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">49</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_DEBUG</span><span class="cpp_separator">(</span><span class="cpp_plain">DB_IO</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;Server&nbsp;IO&nbsp;dispatch&nbsp;disabled.\n&quot;</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">50</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">else</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">51</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_DEBUG</span><span class="cpp_separator">(</span><span class="cpp_plain">DB_IO</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;Server&nbsp;IO&nbsp;dispatch&nbsp;enabled.\n&quot;</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">52</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">53</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">54</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;daos_rpc_register</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">obj_proto_fmt</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;OBJ_PROTO_CLI_COUNT</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">55</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NULL</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_OBJ_MODULE</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">56</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">57</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_ERROR</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;failed&nbsp;to&nbsp;register&nbsp;daos&nbsp;obj&nbsp;RPCs:&nbsp;%d\n&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">58</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_GOTO</span><span class="cpp_separator">(</span><span class="cpp_plain">out</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">59</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">60</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">61</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;obj_ec_codec_init</span><span class="cpp_separator">();</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">62</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">63</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_ERROR</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;failed&nbsp;to&nbsp;obj_ec_codec_init:&nbsp;%d\n&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">64</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">65</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">out</span><span class="cpp_operator">:</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">66</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">67</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">68</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">69</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">/**</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">70</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;Finalize&nbsp;object&nbsp;interface</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">71</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">72</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_keyword">void</span>
+</td>
+</tr>
+<tr class="covered">
+<td class="line">73<a name='73'/></td>
+<td class="line"><img src='../images/check_icon.png'></td>
+<td class="code"><span class="cpp_plain">dc_obj_fini</span><span class="cpp_separator">(</span><span class="cpp_keyword">void</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">74</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">75</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_rpc_unregister</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">obj_proto_fmt</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">76</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;obj_ec_codec_fini</span><span class="cpp_separator">();</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">77</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">}</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="footer">Report generated by <a href="http://bullshtml.googlecode.com" target="_top">Bullseye Html Reporter</a> </div> 
+</body> 
+</html>
