@@ -1,0 +1,2584 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<title>Coverage Report</title> 
+<link title="Style" type="text/css" rel="stylesheet" href="../css/main.css"/> 
+<link title="Style" type="text/css" rel="stylesheet" href="../css/highlight.css"/> 
+
+<link title="Style" type="text/css" rel="stylesheet" href="../css/sortabletable.css"/> 
+<script type="text/javascript" src="../js/popup.js"></script> 
+<script type="text/javascript" src="../js/sortabletable.js"></script> 
+<script type="text/javascript" src="../js/customsorttypes.js"></script> 
+</head> 
+<body>
+<h5>Coverage Report - /home/samirrav/gcov_daos/src/vos/vos_query.c <a href="../_home_samirrav_gcov_daos_src_vos.html"><img src='../images/upper.png' border="0"/></a></h5> 
+<br>
+<div class="separator">&nbsp;</div> 
+<table class="report" id="fileList"> 
+	<thead>
+		<tr>
+			<td class="heading" width="50%">File</td>  
+			<td class="heading" width="10%">#Function</td>  
+			<td class="heading"  width="20%">
+				<a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">
+					Function Coverage
+				</a>
+			</td>
+			<td class="heading"  width="20%">
+				<a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">
+					Branch Coverage
+				</a>
+			</td>
+		</tr>
+	</thead> 
+	
+	
+	<tbody> 
+	<tr>
+			<td><a href='../_home_samirrav_gcov_daos_src_vos/vos_query_c.html'>/home/samirrav/gcov_daos/src/vos/vos_query.c</a></td>
+			<td class='value'>4</td>
+			<td><table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+					<tr class='percentgraph'>
+						<td align='right' class='percentgraph' width='40'>100.0%</td>
+						<td class='percentgraph'>
+							<div class='percentgraph'>
+								<div class='greenbar' style='width:100px'>
+									<span class='text'>4/4</span>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+					<tr class='percentgraph'>
+						<td align='right' class='percentgraph' width='40'>51.0%</td>
+						<td class='percentgraph'>
+							<div class='percentgraph'>
+								<div class='greenbar' style='width:51px'>
+									<span class='text'>49/96</span>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</tbody> 
+</table> 
+
+<div class="separator">&nbsp;</div> 
+<table class="report" id="currentDir"> 
+	<thead>
+		<tr>
+			<td class="heading" width="50%">Functions</td>  
+			<td class="heading" width="25%">Function Covered</td>  
+			<td class="heading"  width="25%">
+				<a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">
+					Branch Coverage
+				</a>
+			</td>
+		</tr>
+	</thead> 
+	<tbody> 
+			<tr>
+					<td><a href='#51'>find_key(struct open_query*,daos_handle_t,daos_key_t*,daos_anchor_t*)</a></td>
+					<td>
+							Covered
+					</td>
+					<td>
+						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+							<tr class='percentgraph'>
+								<td align='right' class='percentgraph' width='40'>36.4%</td>
+								<td class='percentgraph'>
+									<div class='percentgraph'>
+										<div class='greenbar' style='width:36.4px'>
+											<span class='text'>8/22</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+		<tr>
+					<td><a href='#127'>query_recx(struct open_query*,daos_recx_t*)</a></td>
+					<td>
+							Covered
+					</td>
+					<td>
+						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+							<tr class='percentgraph'>
+								<td align='right' class='percentgraph' width='40'>50.0%</td>
+								<td class='percentgraph'>
+									<div class='percentgraph'>
+										<div class='greenbar' style='width:50.0px'>
+											<span class='text'>7/14</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+		<tr>
+					<td><a href='#187'>open_and_query_key(struct open_query*,daos_key_t*,uint32_t,daos_anchor_t*)</a></td>
+					<td>
+							Covered
+					</td>
+					<td>
+						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+							<tr class='percentgraph'>
+								<td align='right' class='percentgraph' width='40'>62.5%</td>
+								<td class='percentgraph'>
+									<div class='percentgraph'>
+										<div class='greenbar' style='width:62.5px'>
+											<span class='text'>10/16</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+		<tr>
+					<td><a href='#260'>vos_obj_query_key(daos_handle_t,daos_unit_oid_t,uint32_t,daos_epoch_t,daos_key_t*,daos_key_t*,daos_recx_t*)</a></td>
+					<td>
+							Covered
+					</td>
+					<td>
+						<table cellpadding='0px' cellspacing='0px' class='percentgraph'>
+							<tr class='percentgraph'>
+								<td align='right' class='percentgraph' width='40'>54.5%</td>
+								<td class='percentgraph'>
+									<div class='percentgraph'>
+										<div class='greenbar' style='width:54.5px'>
+											<span class='text'>24/44</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			
+	</tbody> 
+</table> 
+
+
+
+<div class="separator">&nbsp;</div> 
+<div style="overflow-x:scroll;">
+<table class="source">
+<colgroup>
+<col width="40"/>
+<col width="40"/>
+<col width=""/>
+</colgroup>
+<tr class="kwnone">
+<td class="line">1</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">/**</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">2</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;(C)&nbsp;Copyright&nbsp;2019&nbsp;Intel&nbsp;Corporation.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">3</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">4</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;Licensed&nbsp;under&nbsp;the&nbsp;Apache&nbsp;License,&nbsp;Version&nbsp;2.0&nbsp;(the&nbsp;&quot;License&quot;);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">5</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;you&nbsp;may&nbsp;not&nbsp;use&nbsp;this&nbsp;file&nbsp;except&nbsp;in&nbsp;compliance&nbsp;with&nbsp;the&nbsp;License.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">6</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;You&nbsp;may&nbsp;obtain&nbsp;a&nbsp;copy&nbsp;of&nbsp;the&nbsp;License&nbsp;at</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">7</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">8</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;http://www.apache.org/licenses/LICENSE-2.0</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">9</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">10</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;Unless&nbsp;required&nbsp;by&nbsp;applicable&nbsp;law&nbsp;or&nbsp;agreed&nbsp;to&nbsp;in&nbsp;writing,&nbsp;software</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">11</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;distributed&nbsp;under&nbsp;the&nbsp;License&nbsp;is&nbsp;distributed&nbsp;on&nbsp;an&nbsp;&quot;AS&nbsp;IS&quot;&nbsp;BASIS,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">12</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;WITHOUT&nbsp;WARRANTIES&nbsp;OR&nbsp;CONDITIONS&nbsp;OF&nbsp;ANY&nbsp;KIND,&nbsp;either&nbsp;express&nbsp;or&nbsp;implied.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">13</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;See&nbsp;the&nbsp;License&nbsp;for&nbsp;the&nbsp;specific&nbsp;language&nbsp;governing&nbsp;permissions&nbsp;and</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">14</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;limitations&nbsp;under&nbsp;the&nbsp;License.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">15</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">16</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;GOVERNMENT&nbsp;LICENSE&nbsp;RIGHTS-OPEN&nbsp;SOURCE&nbsp;SOFTWARE</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">17</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;The&nbsp;Government's&nbsp;rights&nbsp;to&nbsp;use,&nbsp;modify,&nbsp;reproduce,&nbsp;release,&nbsp;perform,&nbsp;display,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">18</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;or&nbsp;disclose&nbsp;this&nbsp;software&nbsp;are&nbsp;subject&nbsp;to&nbsp;the&nbsp;terms&nbsp;of&nbsp;the&nbsp;Apache&nbsp;License&nbsp;as</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">19</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;provided&nbsp;in&nbsp;Contract&nbsp;No.&nbsp;B609815.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">20</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;Any&nbsp;reproduction&nbsp;of&nbsp;computer&nbsp;software,&nbsp;computer&nbsp;software&nbsp;documentation,&nbsp;or</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">21</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;portions&nbsp;thereof&nbsp;marked&nbsp;with&nbsp;this&nbsp;legend&nbsp;must&nbsp;also&nbsp;reproduce&nbsp;the&nbsp;markings.</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">22</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">23</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">/**</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">24</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;This&nbsp;file&nbsp;is&nbsp;part&nbsp;of&nbsp;daos</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">25</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">26</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*&nbsp;vos/vos_query.c</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">27</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_doxygen_comment">&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">28</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;D_LOGFAC&nbsp;&nbsp;&nbsp;&nbsp;DD_FAC</span><span class="cpp_separator">(</span><span class="cpp_plain">vos</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">29</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">30</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">daos</span><span class="cpp_operator">/</span><span class="cpp_plain">common</span><span class="cpp_separator">.</span><span class="cpp_plain">h</span><span class="cpp_operator">&gt;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">31</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">daos</span><span class="cpp_operator">/</span><span class="cpp_plain">btree</span><span class="cpp_separator">.</span><span class="cpp_plain">h</span><span class="cpp_operator">&gt;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">32</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">daos_types</span><span class="cpp_separator">.</span><span class="cpp_plain">h</span><span class="cpp_operator">&gt;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">33</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">daos_srv</span><span class="cpp_operator">/</span><span class="cpp_plain">vos</span><span class="cpp_separator">.</span><span class="cpp_plain">h</span><span class="cpp_operator">&gt;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">34</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">daos_api</span><span class="cpp_separator">.</span><span class="cpp_plain">h</span><span class="cpp_operator">&gt;</span><span class="cpp_plain">&nbsp;</span><span class="cpp_comment">/*&nbsp;For&nbsp;ofeat&nbsp;bits&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">35</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#include</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;vos_internal.h&quot;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">36</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">37</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;open_query&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">38</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_epoch_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;qt_epoch</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">39</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;umem_attr&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">qt_uma</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">40</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;btr_root&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">qt_dkey_root</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">41</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_handle_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;qt_dkey_toh</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">42</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;btr_root&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">qt_akey_root</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">43</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_handle_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;qt_akey_toh</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">44</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;evt_root&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">qt_recx_root</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">45</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;uint32_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;qt_flags</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">46</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;vea_space_info&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">qt_vea_info</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">47</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_handle_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;qt_coh</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">48</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">};</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">49</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">50</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
+</td>
+</tr>
+<tr class="covered">
+<td class="line">51<a name='51'/></td>
+<td class="line"><img src='../images/check_icon.png'></td>
+<td class="code"><span class="cpp_plain">find_key</span><span class="cpp_separator">(</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;open_query&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">query</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;daos_handle_t&nbsp;toh</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;daos_key_t&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">key</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">52</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;daos_anchor_t&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">anchor</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">53</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">54</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_handle_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ih</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">55</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;vos_key_bundle&nbsp;&nbsp;&nbsp;&nbsp;kbund</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">56</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;vos_rec_bundle&nbsp;&nbsp;&nbsp;&nbsp;rbund</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">57</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_iov_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kiov</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">58</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_iov_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kbund_kiov</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">59</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_iov_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;riov</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">60</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_csum_buf_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;csum</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">61</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_epoch_range_t&nbsp;&nbsp;&nbsp;epr</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">62</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">63</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fini_rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">64</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;opc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">65</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">66</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;dbtree_iter_prepare</span><span class="cpp_separator">(</span><span class="cpp_plain">toh</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;BTR_ITER_EMBEDDED</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">ih</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">67</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">68</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">69</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">70</td>
+<td class="line"><span class='coveredmark'>T</span><span class='uncoveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_flags&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_GET_MAX</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">71</td>
+<td class="line"><span class='coveredmark'>T</span><span class='uncoveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">daos_anchor_is_zero</span><span class="cpp_separator">(</span><span class="cpp_plain">anchor</span><span class="cpp_separator">))</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">72</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;opc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;BTR_PROBE_LAST</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">73</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">else</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">74</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;opc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;BTR_PROBE_LT</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">75</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">else</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">76</td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">daos_anchor_is_zero</span><span class="cpp_separator">(</span><span class="cpp_plain">anchor</span><span class="cpp_separator">))</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">77</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;opc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;BTR_PROBE_FIRST</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">78</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">else</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">79</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;opc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;BTR_PROBE_GT</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">80</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">81</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;dbtree_iter_probe</span><span class="cpp_separator">(</span><span class="cpp_plain">ih</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;opc</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_INTENT_DEFAULT</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;anchor</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">82</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">83</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;out</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">84</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">85</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;tree_key_bundle2iov</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">kbund</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">kiov</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">86</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;tree_rec_bundle2iov</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">rbund</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">riov</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">87</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;kbund</span><span class="cpp_separator">.</span><span class="cpp_plain">kb_key&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">kbund_kiov</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">88</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">89</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rbund</span><span class="cpp_separator">.</span><span class="cpp_plain">rb_iov&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;key</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">90</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rbund</span><span class="cpp_separator">.</span><span class="cpp_plain">rb_csum&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">csum</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">91</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">92</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">do</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">93</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;daos_iov_set</span><span class="cpp_separator">(</span><span class="cpp_plain">rbund</span><span class="cpp_separator">.</span><span class="cpp_plain">rb_iov</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">94</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;daos_csum_set</span><span class="cpp_separator">(</span><span class="cpp_plain">rbund</span><span class="cpp_separator">.</span><span class="cpp_plain">rb_csum</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">95</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">96</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;dbtree_iter_fetch</span><span class="cpp_separator">(</span><span class="cpp_plain">ih</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">kiov</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">riov</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;anchor</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">97</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">98</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">break</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">99</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">100</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;epr</span><span class="cpp_separator">.</span><span class="cpp_plain">epr_lo&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;rbund</span><span class="cpp_separator">.</span><span class="cpp_plain">rb_krec</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">kr_earliest</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">101</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rbund</span><span class="cpp_separator">.</span><span class="cpp_plain">rb_krec</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">kr_bmap&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;KREC_BF_PUNCHED</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">102</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;epr</span><span class="cpp_separator">.</span><span class="cpp_plain">epr_hi&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;rbund</span><span class="cpp_separator">.</span><span class="cpp_plain">rb_krec</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">kr_latest</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">103</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">else</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">104</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;epr</span><span class="cpp_separator">.</span><span class="cpp_plain">epr_hi&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;DAOS_EPOCH_MAX</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">105</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">106</td>
+<td class="line"><span class='coveredmark'>T</span><span class='uncoveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_epoch&nbsp;</span><span class="cpp_operator">&gt;=</span><span class="cpp_plain">&nbsp;epr</span><span class="cpp_separator">.</span><span class="cpp_plain">epr_lo&nbsp;</span><span class="cpp_operator">&amp;&amp;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">107</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_epoch&nbsp;</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">&nbsp;epr</span><span class="cpp_separator">.</span><span class="cpp_plain">epr_hi</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">108</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">break</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">109</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">110</td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_flags&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_GET_MAX</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">111</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;dbtree_iter_prev_with_intent</span><span class="cpp_separator">(</span><span class="cpp_plain">ih</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">112</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_INTENT_DEFAULT</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">113</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">else</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">114</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;dbtree_iter_next_with_intent</span><span class="cpp_separator">(</span><span class="cpp_plain">ih</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">115</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_INTENT_DEFAULT</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">116</td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">while</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">117</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">out</span><span class="cpp_operator">:</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">118</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;fini_rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;dbtree_iter_finish</span><span class="cpp_separator">(</span><span class="cpp_plain">ih</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">119</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">120</td>
+<td class="line"><span class='coveredmark'>T</span><span class='uncoveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">121</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;fini_rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">122</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">123</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">124</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">125</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">126</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
+</td>
+</tr>
+<tr class="covered">
+<td class="line">127<a name='127'/></td>
+<td class="line"><img src='../images/check_icon.png'></td>
+<td class="code"><span class="cpp_plain">query_recx</span><span class="cpp_separator">(</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;open_query&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">query</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;daos_recx_t&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">recx</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">128</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">129</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;evt_entry&nbsp;&nbsp;&nbsp;&nbsp;entry</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">130</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_handle_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;toh</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">131</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_handle_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ih</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">132</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;evt_filter&nbsp;&nbsp;&nbsp;filter</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">133</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">134</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;close_rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">135</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;opc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">136</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;uint32_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inob</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">137</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">138</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;recx</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">rx_idx&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">139</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;recx</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">rx_nr&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">140</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">141</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;evt_open</span><span class="cpp_separator">(</span><span class="cpp_plain">query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_recx_root</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_uma</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_coh</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">142</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_vea_info</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">toh</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">143</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">144</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">145</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">146</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;opc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;EVT_ITER_EMBEDDED&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;EVT_ITER_VISIBLE&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;EVT_ITER_SKIP_HOLES</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">147</td>
+<td class="line"><span class='coveredmark'>T</span><span class='uncoveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_flags&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_GET_MAX</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">148</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;opc&nbsp;</span><span class="cpp_operator">|=</span><span class="cpp_plain">&nbsp;EVT_ITER_REVERSE</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">149</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">150</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;filter</span><span class="cpp_separator">.</span><span class="cpp_plain">fr_ex</span><span class="cpp_separator">.</span><span class="cpp_plain">ex_lo&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">151</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;filter</span><span class="cpp_separator">.</span><span class="cpp_plain">fr_ex</span><span class="cpp_separator">.</span><span class="cpp_plain">ex_hi&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">~</span><span class="cpp_separator">(</span><span class="cpp_plain">uint64_t</span><span class="cpp_separator">)</span><span class="cpp_literal">0</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">152</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;filter</span><span class="cpp_separator">.</span><span class="cpp_plain">fr_epr</span><span class="cpp_separator">.</span><span class="cpp_plain">epr_lo&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">153</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;filter</span><span class="cpp_separator">.</span><span class="cpp_plain">fr_epr</span><span class="cpp_separator">.</span><span class="cpp_plain">epr_hi&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_epoch</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">154</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">155</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">156</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;evt_iter_prepare</span><span class="cpp_separator">(</span><span class="cpp_plain">toh</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;opc</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">filter</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">ih</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">157</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">158</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;out</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">159</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">160</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*</span><span class="cpp_plain">&nbsp;For&nbsp;MAX,&nbsp;we&nbsp;do&nbsp;reverse&nbsp;iterator</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">161</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;For&nbsp;MIN,&nbsp;we&nbsp;use&nbsp;forward&nbsp;iterator</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">162</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;In&nbsp;both&nbsp;cases,&nbsp;EVT_ITER_FIRST&nbsp;gives&nbsp;us&nbsp;what&nbsp;we&nbsp;want</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">163</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">164</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;evt_iter_probe</span><span class="cpp_separator">(</span><span class="cpp_plain">ih</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;EVT_ITER_FIRST</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">165</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">166</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;fini</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">167</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">168</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;evt_iter_fetch</span><span class="cpp_separator">(</span><span class="cpp_plain">ih</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">inob</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">entry</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">169</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">170</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;fini</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">171</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">172</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;recx</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">rx_idx&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;entry</span><span class="cpp_separator">.</span><span class="cpp_plain">en_sel_ext</span><span class="cpp_separator">.</span><span class="cpp_plain">ex_lo</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">173</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;recx</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">rx_nr&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;entry</span><span class="cpp_separator">.</span><span class="cpp_plain">en_sel_ext</span><span class="cpp_separator">.</span><span class="cpp_plain">ex_hi&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">&nbsp;entry</span><span class="cpp_separator">.</span><span class="cpp_plain">en_sel_ext</span><span class="cpp_separator">.</span><span class="cpp_plain">ex_lo&nbsp;</span><span class="cpp_operator">+</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">1</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">174</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">fini</span><span class="cpp_operator">:</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">175</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;close_rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;evt_iter_finish</span><span class="cpp_separator">(</span><span class="cpp_plain">ih</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">176</td>
+<td class="line"><span class='coveredmark'>T</span><span class='uncoveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">177</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;close_rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">178</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">out</span><span class="cpp_operator">:</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">179</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;close_rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;evt_close</span><span class="cpp_separator">(</span><span class="cpp_plain">toh</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">180</td>
+<td class="line"><span class='coveredmark'>T</span><span class='uncoveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">181</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;close_rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">182</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">183</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">184</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">185</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">186</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_keyword">static</span><span class="cpp_plain">&nbsp;</span><span class="cpp_type">int</span>
+</td>
+</tr>
+<tr class="covered">
+<td class="line">187<a name='187'/></td>
+<td class="line"><img src='../images/check_icon.png'></td>
+<td class="code"><span class="cpp_plain">open_and_query_key</span><span class="cpp_separator">(</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;open_query&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">query</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;daos_key_t&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">key</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">188</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uint32_t&nbsp;tree_type</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;daos_anchor_t&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">anchor</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">189</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">190</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_handle_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">toh</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">191</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;btr_root&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">to_open</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">192</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_csum_buf_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;csum&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_literal">0</span><span class="cpp_separator">};</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">193</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;vos_key_bundle&nbsp;&nbsp;&nbsp;&nbsp;kbund</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">194</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;vos_rec_bundle&nbsp;&nbsp;&nbsp;&nbsp;rbund</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">195</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_iov_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kiov</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">196</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_iov_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;riov</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">197</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">enum</span><span class="cpp_plain">&nbsp;vos_tree_class&nbsp;&nbsp;tclass</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">198</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">199</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="covered">
+<td class="line">200</td>
+<td class="line"><span class='coveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tree_type&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;DAOS_GET_DKEY</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">201</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;toh&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_dkey_toh</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">202</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to_open&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_dkey_root</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">203</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tclass&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;VOS_BTR_DKEY</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">204</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">else</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">205</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;toh&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_akey_toh</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">206</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to_open&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_akey_root</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">207</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tclass&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;VOS_BTR_AKEY</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">208</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">209</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">210</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">to_open</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">tr_class&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">211</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_NONEXIST</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">212</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">213</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;dbtree_open_inplace_ex</span><span class="cpp_separator">(</span><span class="cpp_plain">to_open</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_uma</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">214</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_coh</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;toh</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">215</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">216</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">217</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">218</td>
+<td class="line"><span class='coveredmark'>T</span><span class='uncoveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tree_type&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_flags</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">219</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;find_key</span><span class="cpp_separator">(</span><span class="cpp_plain">query</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">toh</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;key</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;anchor</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">220</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">221</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">222</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">223</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">224</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">225</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;tree_key_bundle2iov</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">kbund</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">kiov</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">226</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;kbund</span><span class="cpp_separator">.</span><span class="cpp_plain">kb_key&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;key</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">227</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;kbund</span><span class="cpp_separator">.</span><span class="cpp_plain">kb_epoch&nbsp;&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_epoch</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">228</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">229</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;tree_rec_bundle2iov</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">rbund</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">riov</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">230</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rbund</span><span class="cpp_separator">.</span><span class="cpp_plain">rb_mmid&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;UMMID_NULL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">231</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rbund</span><span class="cpp_separator">.</span><span class="cpp_plain">rb_csum&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">csum</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">232</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rbund</span><span class="cpp_separator">.</span><span class="cpp_plain">rb_tclass&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;tclass</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">233</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">234</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;dbtree_fetch</span><span class="cpp_separator">(</span><span class="cpp_operator">*</span><span class="cpp_plain">toh</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;BTR_PROBE_GE&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;BTR_PROBE_MATCHED</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">235</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_INTENT_DEFAULT</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">kiov</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">riov</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">236</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">237</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">238</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">239</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="covered">
+<td class="line">240</td>
+<td class="line"><span class='coveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">tree_type&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;DAOS_GET_DKEY</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">241</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_akey_root&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">rbund</span><span class="cpp_separator">.</span><span class="cpp_plain">rb_krec</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">kr_btr</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">242</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">else</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">rbund</span><span class="cpp_separator">.</span><span class="cpp_plain">rb_krec</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">kr_bmap&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;KREC_BF_EVT</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">243</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_NONEXIST</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">244</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">else</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">245</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;query</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">qt_recx_root&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">rbund</span><span class="cpp_separator">.</span><span class="cpp_plain">rb_krec</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">kr_evt</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">246</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">247</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">248</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">249</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">250</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_preproc">#define</span><span class="cpp_plain">&nbsp;LOG_RC</span><span class="cpp_separator">(</span><span class="cpp_plain">rc</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">...)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">251</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">do</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">252</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_ASSERT</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">);</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">253</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_NONEXIST</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">254</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_INFO</span><span class="cpp_separator">(</span><span class="cpp_plain">__VA_ARGS__</span><span class="cpp_separator">);</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">255</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">else</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">256</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_ERROR</span><span class="cpp_separator">(</span><span class="cpp_plain">__VA_ARGS__</span><span class="cpp_separator">);</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;\</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">257</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">while</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">258</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">259</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_type">int</span>
+</td>
+</tr>
+<tr class="covered">
+<td class="line">260<a name='260'/></td>
+<td class="line"><img src='../images/check_icon.png'></td>
+<td class="code"><span class="cpp_plain">vos_obj_query_key</span><span class="cpp_separator">(</span><span class="cpp_plain">daos_handle_t&nbsp;coh</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;daos_unit_oid_t&nbsp;oid</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;uint32_t&nbsp;flags</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">261</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;daos_epoch_t&nbsp;epoch</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;daos_key_t&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">dkey</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;daos_key_t&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">akey</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">262</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;daos_recx_t&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">recx</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">263</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">264</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;vos_object&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">*</span><span class="cpp_plain">obj</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">265</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">struct</span><span class="cpp_plain">&nbsp;open_query&nbsp;&nbsp;&nbsp;&nbsp;query</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">266</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_anchor_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dkey_anchor</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">267</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_anchor_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;akey_anchor</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">268</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;daos_ofeat_t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;obj_feats</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">269</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_type">int</span><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">270</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">271</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">flags&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_GET_MAX</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;&amp;</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">flags&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_GET_MIN</span><span class="cpp_separator">))</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">272</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_ERROR</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;Ambiguous&nbsp;query.&nbsp;&nbsp;Please&nbsp;select&nbsp;either&nbsp;DAOS_GET_MAX&quot;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">273</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">&quot;&nbsp;or&nbsp;DAOS_GET_MIN\n&quot;</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">274</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_INVAL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">275</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">276</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">277</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_operator">!</span><span class="cpp_separator">(</span><span class="cpp_plain">flags&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_GET_MAX</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;&amp;</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">!</span><span class="cpp_separator">(</span><span class="cpp_plain">flags&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_GET_MIN</span><span class="cpp_separator">))</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">278</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_ERROR</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;No&nbsp;query&nbsp;type.&nbsp;&nbsp;Please&nbsp;select&nbsp;either&nbsp;DAOS_GET_MAX&quot;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">279</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">&quot;&nbsp;or&nbsp;DAOS_GET_MIN\n&quot;</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">280</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_INVAL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">281</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">282</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">283</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">flags&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">DAOS_GET_DKEY&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;DAOS_GET_AKEY&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;DAOS_GET_RECX</span><span class="cpp_separator">))</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">284</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_ERROR</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;No&nbsp;tree&nbsp;queried.&nbsp;&nbsp;Please&nbsp;select&nbsp;one&nbsp;or&nbsp;more&nbsp;of&quot;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">285</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_literal">&quot;&nbsp;DAOS_GET_DKEY,&nbsp;DAOS_GET_AKEY,&nbsp;or&nbsp;DAOS_GET_RECX\n&quot;</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">286</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_INVAL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">287</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">288</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">289</td>
+<td class="line"><span class='coveredmark'>T</span><span class='uncoveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">flags&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_GET_DKEY</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">290</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">dkey&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">291</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_ERROR</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;dkey&nbsp;can't&nbsp;be&nbsp;NULL&nbsp;with&nbsp;DAOS_GET_DKEY\n&quot;</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">292</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_INVAL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">293</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">294</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;daos_anchor_set_zero</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">dkey_anchor</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">295</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">296</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">297</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">flags&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_GET_AKEY&nbsp;</span><span class="cpp_operator">&amp;&amp;</span><span class="cpp_plain">&nbsp;akey&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">298</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_ERROR</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;akey&nbsp;can't&nbsp;be&nbsp;NULL&nbsp;with&nbsp;DAOS_GET_AKEY\n&quot;</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">299</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_INVAL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">300</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">301</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">302</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">flags&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_GET_RECX&nbsp;</span><span class="cpp_operator">&amp;&amp;</span><span class="cpp_plain">&nbsp;recx&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">303</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_ERROR</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;recx&nbsp;can't&nbsp;be&nbsp;NULL&nbsp;with&nbsp;DAOS_GET_RECX\n&quot;</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">304</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_INVAL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">305</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">306</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">307</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;vos_obj_hold</span><span class="cpp_separator">(</span><span class="cpp_plain">vos_obj_cache_current</span><span class="cpp_separator">(),</span><span class="cpp_plain">&nbsp;coh</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;oid</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;epoch</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_keyword">true</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">308</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DAOS_INTENT_DEFAULT</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">obj</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">309</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">310</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOG_RC</span><span class="cpp_separator">(</span><span class="cpp_plain">rc</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;Could&nbsp;not&nbsp;hold&nbsp;object:&nbsp;%s\n&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;d_errstr</span><span class="cpp_separator">(</span><span class="cpp_plain">rc</span><span class="cpp_separator">));</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">311</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">312</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">313</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="covered">
+<td class="line">314</td>
+<td class="line"><span class='coveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">obj</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">obj_df&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;NULL</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">315</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_NONEXIST</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">316</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_INFO</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;Object&nbsp;not&nbsp;created&nbsp;yet\n&quot;</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">317</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;out</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">318</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">319</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">320</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_comment">/*&nbsp;only&nbsp;integer&nbsp;keys&nbsp;supported&nbsp;*/</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">321</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;obj_feats&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;daos_obj_id2feat</span><span class="cpp_separator">(</span><span class="cpp_plain">obj</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">obj_df</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">vo_id</span><span class="cpp_separator">.</span><span class="cpp_plain">id_pub</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">322</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">flags&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_GET_DKEY</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;&amp;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">323</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">obj_feats&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_OF_DKEY_UINT64</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">324</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_INVAL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">325</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_ERROR</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;Only&nbsp;integer&nbsp;dkey&nbsp;supported&nbsp;for&nbsp;query\n&quot;</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">326</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;out</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">327</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">328</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">flags&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_GET_AKEY</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;&amp;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">329</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">obj_feats&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_OF_AKEY_UINT64</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">330</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_INVAL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">331</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D_ERROR</span><span class="cpp_separator">(</span><span class="cpp_literal">&quot;Only&nbsp;integer&nbsp;akey&nbsp;supported&nbsp;for&nbsp;query\n&quot;</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">332</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">goto</span><span class="cpp_plain">&nbsp;out</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">333</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">334</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">335</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_dkey_toh&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;DAOS_HDL_INVAL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">336</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_akey_toh&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;DAOS_HDL_INVAL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">337</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_epoch&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;epoch</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">338</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_flags&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;flags</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">339</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_uma&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;vos_obj2uma</span><span class="cpp_separator">(</span><span class="cpp_plain">obj</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">340</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_dkey_root&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">obj</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">obj_df</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">vo_tree</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">341</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_coh&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;coh</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">342</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_vea_info&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;obj</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">obj_cont</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">vc_pool</span><span class="cpp_operator">-&gt;</span><span class="cpp_plain">vp_vea_info</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">343</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">344</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">for</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(;;)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">345</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;open_and_query_key</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">query</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;dkey</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_GET_DKEY</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">346</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">dkey_anchor</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">347</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">348</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOG_RC</span><span class="cpp_separator">(</span><span class="cpp_plain">rc</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;Could&nbsp;not&nbsp;query&nbsp;dkey:&nbsp;%s\n&quot;</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;d_errstr</span><span class="cpp_separator">(</span><span class="cpp_plain">rc</span><span class="cpp_separator">));</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">349</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">break</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">350</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">351</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">352</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">flags&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">DAOS_GET_AKEY&nbsp;</span><span class="cpp_operator">|</span><span class="cpp_plain">&nbsp;DAOS_GET_RECX</span><span class="cpp_separator">))</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">353</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">break</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">354</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">355</td>
+<td class="line"><span class='coveredmark'>T</span><span class='uncoveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_flags&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_GET_AKEY</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">356</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;daos_anchor_set_zero</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">akey_anchor</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">357</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">358</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">for</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(;;)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">359</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;open_and_query_key</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">query</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;akey</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;DAOS_GET_AKEY</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">360</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">akey_anchor</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">361</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">362</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOG_RC</span><span class="cpp_separator">(</span><span class="cpp_plain">rc</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;Could&nbsp;not&nbsp;query&nbsp;akey:&nbsp;%s\n&quot;</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">363</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d_errstr</span><span class="cpp_separator">(</span><span class="cpp_plain">rc</span><span class="cpp_separator">));</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">364</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">break</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">365</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">366</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">367</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">((</span><span class="cpp_plain">flags&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_GET_RECX</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">368</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">break</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">369</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">370</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rc&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;query_recx</span><span class="cpp_separator">(</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">query</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;recx</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">371</td>
+<td class="line"></td>
+<td class="code"></span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">372</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">!=</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">0</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">373</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOG_RC</span><span class="cpp_separator">(</span><span class="cpp_plain">rc</span><span class="cpp_separator">,</span><span class="cpp_plain">&nbsp;</span><span class="cpp_literal">&quot;Could&nbsp;not&nbsp;query&nbsp;recx:&nbsp;%s\n&quot;</span><span class="cpp_separator">,</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">374</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d_errstr</span><span class="cpp_separator">(</span><span class="cpp_plain">rc</span><span class="cpp_separator">));</span>
+</td>
+</tr>
+<tr class="uncovered">
+<td class="line">375</td>
+<td class="line"><span class='uncoveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_NONEXIST&nbsp;</span><span class="cpp_operator">&amp;&amp;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">376</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_flags&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_GET_AKEY</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">377</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dbtree_close</span><span class="cpp_separator">(</span><span class="cpp_plain">query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_akey_toh</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">378</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_akey_toh&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;DAOS_HDL_INVAL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">379</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">continue</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">380</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">381</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">382</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">break</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">383</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">384</td>
+<td class="line"><span class='uncoveredmark'>T</span><span class='coveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">rc&nbsp;</span><span class="cpp_operator">==</span><span class="cpp_plain">&nbsp;</span><span class="cpp_operator">-</span><span class="cpp_plain">DER_NONEXIST&nbsp;</span><span class="cpp_operator">&amp;&amp;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">385</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_flags&nbsp;</span><span class="cpp_operator">&amp;</span><span class="cpp_plain">&nbsp;DAOS_GET_DKEY</span><span class="cpp_separator">)</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">{</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">386</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dbtree_close</span><span class="cpp_separator">(</span><span class="cpp_plain">query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_dkey_toh</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">387</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_dkey_toh&nbsp;</span><span class="cpp_operator">=</span><span class="cpp_plain">&nbsp;DAOS_HDL_INVAL</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">388</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">continue</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">389</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">390</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">break</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">391</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_separator">}</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">392</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">out</span><span class="cpp_operator">:</span>
+</td>
+</tr>
+<tr class="covered">
+<td class="line">393</td>
+<td class="line"><span class='coveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">daos_handle_is_inval</span><span class="cpp_separator">(</span><span class="cpp_plain">query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_akey_toh</span><span class="cpp_separator">))</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">394</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dbtree_close</span><span class="cpp_separator">(</span><span class="cpp_plain">query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_akey_toh</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="covered">
+<td class="line">395</td>
+<td class="line"><span class='coveredmark'>TF</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">daos_handle_is_inval</span><span class="cpp_separator">(</span><span class="cpp_plain">query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_dkey_toh</span><span class="cpp_separator">))</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">396</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dbtree_close</span><span class="cpp_separator">(</span><span class="cpp_plain">query</span><span class="cpp_separator">.</span><span class="cpp_plain">qt_dkey_toh</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="halfcovered">
+<td class="line">397</td>
+<td class="line"><span class='coveredmark'>T</span><span class='uncoveredmark'>F</span></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">if</span><span class="cpp_plain">&nbsp;</span><span class="cpp_separator">(</span><span class="cpp_plain">obj</span><span class="cpp_separator">)</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">398</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vos_obj_release</span><span class="cpp_separator">(</span><span class="cpp_plain">vos_obj_cache_current</span><span class="cpp_separator">(),</span><span class="cpp_plain">&nbsp;obj</span><span class="cpp_separator">);</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">399</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_plain">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cpp_keyword">return</span><span class="cpp_plain">&nbsp;rc</span><span class="cpp_separator">;</span>
+</td>
+</tr>
+<tr class="kwnone">
+<td class="line">400</td>
+<td class="line"></td>
+<td class="code"><span class="cpp_separator">}</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="footer">Report generated by <a href="http://bullshtml.googlecode.com" target="_top">Bullseye Html Reporter</a> </div> 
+</body> 
+</html>
